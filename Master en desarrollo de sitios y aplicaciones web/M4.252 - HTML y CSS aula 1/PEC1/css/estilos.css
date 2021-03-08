@@ -1,0 +1,83 @@
+/* 
+------------------------------------------------------------------------------------------------------------------
+Centrar contenido, es esta seccion nos escargaremos de centrar los bloques principales Header,Nav,Article, Foother 
+------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Con esta clase alineamos Header,Nav y Foother */
+
+.fullWidthAling {
+  text-align: center;
+}
+
+/* Con este selector colocamos un ancho general para el contenido  */
+article {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Con esta clase alineamos una pequena div al inicio y dentreo de articulo, y el final de mismo*/
+.headAarticle {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Con estos selectores adecuamos el tamano de los cont. visuales a su contenedor */
+figure img,
+figure iframe {
+  width: 100%;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta seccion se dara formato a la cabecera y menu de navegacion
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/*Removemos los bullet the la lista en el menu de navegación*/
+
+.fullWidthAling ul > li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+/*Removemos el underline y damos el color geneal  a todos los enlaces el documento*/
+
+a {
+  color: #9a0150;
+  text-decoration: none;
+}
+
+/*Especificamos que solo los enlaces en Nav deben ser negros*/
+
+nav.fullWidthAling a {
+  color: black;
+}
+
+/*Agregamos un estilo cuando el curso pase por encima de cada enlace del munu y en general*/
+
+a:hover {
+  text-decoration: underline yellow;
+  text-decoration-thickness: 3px;
+}
+
+/*Ajustamos el tamano de la imagen de cabecera*/
+
+header img {
+  width: 15%;
+}
+
+/*Damos un tono negro al borde inferiror del contendor Nav */
+
+nav {
+  border-bottom: 2px solid black;
+}
+
+/*Esta clase hara que el texto de menu correspondiente sea mas notable*/
+
+.current {
+  font-weight: bold;
+}
