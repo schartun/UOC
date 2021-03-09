@@ -27,10 +27,10 @@ article {
 
 
 /* Con estos selectores adecuamos el tamano de los cont. visuales a su contenedor */
-figure img,iframe {
-  max-width: 100%
+figure img,
+figure iframe {
+  width: 100%;
 }
-
 
 /*
 -------------------------------------------------------------------------------------------------------------------
@@ -121,7 +121,6 @@ footer {
   height: 100px;
   height: 90px;
   line-height: 90px;
-  font-size: 12px;
 }
 
 
@@ -178,29 +177,5 @@ article p {
 
 div.autor_info p {
   font-size: 12px;
-}
-
-
-/*
--------------------------------------------------------------------------------------------------------------------
-En esta seccion se adicionan reglas extra para pagina dietarios, no incluidas anterirormente
--------------------------------------------------------------------------------------------------------------------
-*/
-
-
-/* Estas regla adcuada la listas*/
-
-
-
-ul.dietarios  {
-  list-style: square;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-}
-
-ol {
-  font-size: 12px;
-  line-height: 18px;
 }
 
