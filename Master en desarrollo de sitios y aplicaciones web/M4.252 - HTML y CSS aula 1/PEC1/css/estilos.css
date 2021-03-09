@@ -25,6 +25,7 @@ article {
   text-align: center;
 }
 
+
 /* Con estos selectores adecuamos el tamano de los cont. visuales a su contenedor */
 figure img,
 figure iframe {
@@ -81,3 +82,95 @@ nav {
 .current {
   font-weight: bold;
 }
+
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta seccion se dara formato a al apartado donde se da informacion del autor
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/*Con esta regla queremos aplicar a la imagen dentro del contendor con la clase indica un aspecto redondeado, y moverlo ligeramente a la derecha*/
+
+div.autor_info img {
+  width: 25%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/*Con esta regla damos algo de espacio entre la info del autor y contenido anterior*/
+
+.autor_info {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta seccion se dara formato al pie de pagina
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*Damos un color de fondo y cambio de color de fuente*/
+
+footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  height: 90px;
+  line-height: 90px;
+}
+
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta seccion se aplicaran reglas para camiar aspecto de fuentes y estilo de texto
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+
+/* Con esta regla queremos evitar que los parrafos dentro de estas clases sean afectados por el alineamiento principal*/
+
+.headAarticle p:last-child, .autor_info{
+  text-align: left;
+}
+
+
+/* Con regla queremos dar una tamaño de fuente mas pequeña al pie de cada imagen y video*/
+
+figcaption {
+    margin: 5px;
+    font-size: xx-small;
+}
+
+
+/* Estas reglas definen la fuente a ser usada en los tituloes y su alineacion correspondiente*/
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+main {
+  font-family: "Helvetica", "Arial", "sans-serif";
+}
+
+article p {
+  line-height: 150%;
+}
+
+.headAarticle:not(.autor_info) p:last-child {
+  font-size: 20px;
+}
+
+div.autor_info p {
+  font-size: 12px;
+}
+
