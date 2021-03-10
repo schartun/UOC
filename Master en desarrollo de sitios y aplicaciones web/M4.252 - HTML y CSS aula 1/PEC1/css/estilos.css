@@ -156,16 +156,21 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 40px;
 }
+
+#livejournal, #penzu, #diario {
+  font-size: 35px;
+  font-weight: lighter;
+}  
 
 main, nav, header {
   font-family: "Helvetica", "Arial", "sans-serif";
 }
 
-div.autor_info cite, em {
+div.autor_info cite, .quote figcaption,
+.quote blockquote, span.names {
   font-family: "Georgia", "Times", "serif";
-
 }
 
 article p {
@@ -194,13 +199,38 @@ En esta seccion se adicionan reglas extra para pagina dietarios, no incluidas an
 
 ul.dietarios  {
   list-style: square;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 30px;
   margin-left: 20px;
 }
 
 ol {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 25px;
 }
+
+.quote {
+  margin-left: 50%; 
+  background: #eee;
+  border-right: #9a0150 2px solid;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+  font-size: 20px;
+}
+
+.quote figcaption {
+  font-size: 10px;
+}
+
+span.names {
+  font-style: italic;
+}
+
+
+
 

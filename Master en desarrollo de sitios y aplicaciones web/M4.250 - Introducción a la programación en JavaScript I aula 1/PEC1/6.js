@@ -7,38 +7,26 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
+let isbn = prompt("Introduce el ISBN de 13 cifras");
 
-let a1 = prompt("Ingresar primer digito de ISBN: ");
-let a2 = prompt("Ingresar segundo digito de ISBN: ");
-let a3 = prompt("Ingresar tercero digito de ISBN: ");
-let a4 = prompt("Ingresar cuarto digito de ISBN: ");
-let a5 = prompt("Ingresar quito digito de ISBN: ");
-let a6 = prompt("Ingresar sexto digito de ISBN: ");
-let a7 = prompt("Ingresar septimo digito de ISBN: ");
-let a8 = prompt("Ingresar octavo digito de ISBN: ");
-let a9 = prompt("Ingresar novedo digito de ISBN: ");
-let a10 = prompt("Ingresar decimo digito de ISBN: ");
-let a11 = prompt("Ingresar decimo primero digito de ISBN: ");
-let a12 = prompt("Ingresar decimo segundo digito de ISBN: ");
-let a13 = prompt("Ingresar decimo tercer digito de ISBN: ");
 
 //convierto el valor que inicialmente es texto, a número, para poder realizar operaciones
 
-a1 = parseInt(a1);
-a2 = parseInt(a2);;
-a3 = parseInt(a3);;
-a4 = parseInt(a4);;
-a5 = parseInt(a5);;
-a6 = parseInt(a6);;
-a7 = parseInt(a7);;
-a8 = parseInt(a8);;
-a9 = parseInt(a9);;
-a10 = parseInt(a10);;
-a11 = parseInt(a11);;
-a12 = parseInt(a12);;
-a13 = parseInt(a13);;
+let a1 = parseInt(isbn[0]);
+let a2 = parseInt(isbn[1]);;
+let a3 = parseInt(isbn[2]);;
+let a4 = parseInt(isbn[3]);;
+let a5 = parseInt(isbn[4]);;
+let a6 = parseInt(isbn[5]);;
+let a7 = parseInt(isbn[6]);;
+let a8 = parseInt(isbn[7]);;
+let a9 = parseInt(isbn[8]);;
+let a10 = parseInt(isbn[9]);;
+let a11 = parseInt(isbn[10]);;
+let a12 = parseInt(isbn[11]);;
+let a13 = parseInt(isbn[12]);;
 
-// Multiplicamos por 1 las posiciones impares y por 3 las posiciones pares del código, y sumamos
+// Multiplicamos por 1 las posiciones impares y por 3 las posiciones pares del código segun regla de claculo, y sumamos
 
 let suma12digitos = ( (a1 + a3 + a5 + a7 + a9 + a11) * 1 ) + ( (a2 + a4 + a6 + a8 + a10 + a12) * 3 );
 
