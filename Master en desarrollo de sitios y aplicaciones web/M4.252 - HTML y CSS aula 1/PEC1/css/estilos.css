@@ -15,6 +15,7 @@ article {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 
 /* Con esta clase alineamos una pequena div al inicio y dentreo de articulo, y el final de mismo*/
@@ -29,8 +30,14 @@ article {
 /* Con estos selectores adecuamos el tamano de los cont. visuales a su contenedor */
 figure img,iframe {
   max-width: 100%
+  
 }
 
+/* Con estes selector retiramos el borde de los iframe*/
+
+iframe {
+  border: 0;
+}
 
 /*
 -------------------------------------------------------------------------------------------------------------------
@@ -43,6 +50,14 @@ En esta seccion se dara formato a la cabecera y menu de navegacion
 .fullWidthAling ul > li {
   margin-bottom: 10px;
   list-style-type: none;
+
+}
+
+/* Sobre escribimos la informacion de la hoja de estilo del agente de usuario para el relleno izquierdo del "ul" de la lista del Nav, de tal forma de lograr el centrado, y damos espcio con el articulo*/
+
+.fullWidthAling ul {
+  padding-left: 0px;
+  margin-bottom: 30px;
 }
 
 /*Removemos el underline y damos el color geneal  a todos los enlaces el documento*/
@@ -69,6 +84,7 @@ a:hover {
 
 header img {
   width: 15%;
+  text-align: center;
 }
 
 /*Damos un tono negro al borde inferiror del contendor Nav */
@@ -96,13 +112,14 @@ div.autor_info img {
   width: 25%;
   border-radius: 50%;
   margin-right: 10px;
+  float: left; 
 }
 
 /*Con esta regla damos algo de espacio entre la info del autor y contenido anterior*/
 
 .autor_info {
   margin-top: 60px;
-  margin-bottom: 60px;
+
 }
 
 
