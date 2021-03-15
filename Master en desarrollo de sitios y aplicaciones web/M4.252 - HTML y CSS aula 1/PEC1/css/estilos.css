@@ -102,7 +102,7 @@ nav {
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta seccion se dara formato a al apartado donde se da informacion del autor
+En esta sección se dará formato a al apartado donde se da información del autor
 -------------------------------------------------------------------------------------------------------------------
 */
 
@@ -119,13 +119,12 @@ div.autor_info img {
 
 .autor_info {
   margin-top: 60px;
-
 }
 
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta seccion se dara formato al pie de pagina
+En esta sección se dará formato al pie de pagina
 -------------------------------------------------------------------------------------------------------------------
 */
 
@@ -133,9 +132,8 @@ En esta seccion se dara formato al pie de pagina
 /*Damos un color de fondo y cambio de color de fuente*/
 
 footer {
-  background-color: black;
-  color: white;
-  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
   height: 90px;
   line-height: 90px;
   font-size: 12px;
@@ -144,12 +142,12 @@ footer {
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta seccion se aplicaran reglas para camiar aspecto de fuentes y estilo de texto
+En esta sección se aplicaran reglas para cambiar aspecto de fuentes y estilo de texto
 -------------------------------------------------------------------------------------------------------------------
 */
 
 
-/* Con esta regla queremos evitar que los parrafos dentro de estas clases sean afectados por el alineamiento principal*/
+/* Con esta regla queremos evitar que los párrafos dentro de estas clases sean afectados por el alineamiento principal que es texto centrado.*/
 
 .headAarticle p:last-child, .autor_info{
   text-align: left;
@@ -164,7 +162,7 @@ figcaption {
 }
 
 
-/* Estas reglas definen la fuente a ser usada en los tituloes y su alineacion correspondiente*/
+/* Estas reglas definen la fuente a ser usada en los títulos y su alineación correspondiente*/
 
 h1 {
   font-size: 55px;
@@ -205,7 +203,7 @@ div.autor_info p {
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta seccion se adicionan reglas extra para pagina dietarios, no incluidas anterirormente
+En esta sección se adicionan reglas extra para página dietarios, no incluidas anteriormente
 -------------------------------------------------------------------------------------------------------------------
 */
 
@@ -214,6 +212,8 @@ En esta seccion se adicionan reglas extra para pagina dietarios, no incluidas an
 
 
 
+/* Estilo a las viñetas y adaptación de márgenes para centrado */
+
 ul.dietarios  {
   list-style: square;
   font-size: 25px;
@@ -221,10 +221,15 @@ ul.dietarios  {
   margin-left: 20px;
 }
 
+
+/* modificara la fuente y la altura de línea */
+
 ol {
   font-size: 15px;
   line-height: 25px;
 }
+
+/* Aplicar estilo a la blockquoete y su contenedor en dietarios*/
 
 .quote {
   margin-left: 50%; 
@@ -234,6 +239,7 @@ ol {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .quote figcaption,
 .quote blockquote {
   margin: 1em;
@@ -243,6 +249,8 @@ ol {
 .quote figcaption {
   font-size: 10px;
 }
+
+/* Aplcar estilo a los nombres de autores en todo el docuemento*/
 
 span.names {
   font-style: italic;
