@@ -1,6 +1,6 @@
 /* 
 ------------------------------------------------------------------------------------------------------------------
-Centrar contenido, es esta seccion nos escargaremos de centrar los bloques principales Header,Nav,Article, Foother 
+Centrar contenido, es esta sección nos encargaremos de centrar los bloques principales Header,Nav,Article, Foother
 ------------------------------------------------------------------------------------------------------------------
 */
 
@@ -19,7 +19,7 @@ article {
   margin-bottom: 60px;
 }
 
-/* Con esta clase alineamos una pequena div al inicio y dentreo de articulo, y el final de mismo*/
+/* Con esta clase alineamos una pequeña sección <div> al inicio, dentro de articulo, y el final de mismo. */
 .headAarticle {
   width: 65%;
   margin-left: auto;
@@ -28,13 +28,13 @@ article {
 }
 
 
-/* Con estos selectores adecuamos el tamano de los cont. visuales a su contenedor */
+/* Con estos selectores adecuamos el tamaño  de los cont. visuales a su contenedor */
 figure img,iframe {
   max-width: 100%
   
 }
 
-/* Con estes selector retiramos el borde de los iframe*/
+/* Con este selector retiramos el borde de los iframe*/
 
 iframe {
   border: 0;
@@ -42,11 +42,11 @@ iframe {
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta seccion se dara formato a la cabecera y menu de navegacion
+En esta sección se dará formato a la cabecera y menú de navegación
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/*Removemos los bullet the la lista en el menu de navegación*/
+/*Removemos los bullet de la lista en el menú  de navegación*/
 
 .fullWidthAling ul > li {
   margin-bottom: 10px;
@@ -54,7 +54,7 @@ En esta seccion se dara formato a la cabecera y menu de navegacion
 
 }
 
-/* Sobre escribimos la informacion de la hoja de estilo del agente de usuario para el relleno izquierdo del "ul" de la lista del Nav, de tal forma de lograr el centrado, y damos espcio con el articulo*/
+/* Sobrescribimos la informacion de la hoja de estilo del agente de usuario para el relleno izquierdo del "ul" de la lista del Nav, de tal forma de lograr el centrado, y damos espcio con el articulo*/
 
 .fullWidthAling ul {
   padding-left: 0px;
@@ -71,27 +71,26 @@ a {
 /*Especificamos que solo los enlaces en Nav deben ser negros*/
 
 nav.fullWidthAling a {
-  color: black;
+  color: #000000;
 }
 
-/*Agregamos un estilo cuando el curso pase por encima de cada enlace del munu y en general*/
+/*Agregamos un estilo cuando el curso pase por encima de cada enlace dentro del documento*/
 
 a:hover {
-  text-decoration: underline yellow;
+  text-decoration: underline #ffff00;
   text-decoration-thickness: 3px;
 }
 
-/*Ajustamos el tamano de la imagen de cabecera*/
+/*Ajustamos el tamaño  de la imagen de cabecera*/
 
 header img {
   width: 15%;
-  text-align: center;
 }
 
 /*Damos un tono negro al borde inferiror del contendor Nav */
 
 nav {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
 
 /*Esta clase hara que el texto de menu correspondiente sea mas notable*/
