@@ -11,7 +11,7 @@ let sueldo = prompt("Introducir sueldo: ");
 let retencion = 0.2;
 let cobro;
 
-// Comprobamos que el valor de sueldo sea un numero
+// Comprobamos que el valor de sueldo sea un numero, he inclusive que se haya usado "." como decimal
 
 
 if ( isNaN(sueldo) ) {

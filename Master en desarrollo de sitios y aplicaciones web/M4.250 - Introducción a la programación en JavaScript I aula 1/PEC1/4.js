@@ -16,7 +16,8 @@ let c = prompt("Introducir un entero para el valor de C: ");
 
 console.log("Números introducidos: " + a, b, c);
 
-//Comprobacion que los valores ingresados no sean numeros y no sean float
+//Comprobacion que los valores ingresados son numeros entereos, y no sean float, ni strings
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
 if (isNaN(a) || isNaN(b) || isNaN(c) ){
     console.log("Uno de los valores introducidos no es un número, cargue el programa para introducir nuevamente");

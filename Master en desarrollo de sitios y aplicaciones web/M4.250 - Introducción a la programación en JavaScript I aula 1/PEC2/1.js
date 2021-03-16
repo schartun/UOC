@@ -6,7 +6,7 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let numero = prompt ("Inserte numero entero: ");
+let numero = prompt("Inserte numero entero: ");
 let cadena = 0;
 let secuencia;
 

@@ -20,7 +20,7 @@ console.log("Dia: " + dia + " Mes: " + mes )
 // las expresiones >, < nos permiten restringir el rango
 
 if (isNaN(dia) || isNaN(mes)){
-    console.log("Uno o ambos de los valores introducidos no es un número, cargue el programa para introducir nuevamente");
+    console.log("Uno o ambos de los valores introducidos no son números, cargue el programa para introducir nuevamente");
 } else if ((dia % 1 !== 0)||(mes % 1 !== 0)) {
     console.log("Uno de los valores introducidos es un numero decimal, cargue el programa para introducir nuevamente");
     } else if ( (dia <= 0) || (dia > 31) || (mes <= 0 ) || (mes > 12) ) {
