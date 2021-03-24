@@ -4,6 +4,11 @@ Centrar contenido, es esta sección nos encargaremos de centrar los bloques prin
 ------------------------------------------------------------------------------------------------------------------
 */
 
+/* Remover los margenes del cuerpo */
+
+body {
+  margin: 0;
+}
 
 /* Con esta clase alineamos Header,Nav y Foother */
 
@@ -27,11 +32,10 @@ article {
   text-align: center;
 }
 
-
 /* Con estos selectores adecuamos el tamaño  de los cont. visuales a su contenedor */
-figure img,iframe {
-  max-width: 100%
-  
+figure img,
+iframe {
+  max-width: 100%;
 }
 
 /* Con este selector retiramos el borde de los iframe*/
@@ -51,7 +55,6 @@ En esta sección se dará formato a la cabecera y menú de navegación
 .fullWidthAling ul > li {
   margin-bottom: 10px;
   list-style-type: none;
-
 }
 
 /* Sobrescribimos la informacion de la hoja de estilo del agente de usuario para el relleno izquierdo del "ul" de la lista del Nav, de tal forma de lograr el centrado, y damos espcio con el articulo*/
@@ -99,7 +102,6 @@ nav {
   font-weight: bold;
 }
 
-
 /*
 -------------------------------------------------------------------------------------------------------------------
 En esta sección se dará formato a al apartado donde se da información del autor
@@ -112,7 +114,7 @@ div.autor_info img {
   width: 25%;
   border-radius: 50%;
   margin-right: 10px;
-  float: left; 
+  float: left;
 }
 
 /*Con esta regla damos algo de espacio entre la info del autor y contenido anterior*/
@@ -121,13 +123,11 @@ div.autor_info img {
   margin-top: 60px;
 }
 
-
 /*
 -------------------------------------------------------------------------------------------------------------------
 En esta sección se dará formato al pie de pagina
 -------------------------------------------------------------------------------------------------------------------
 */
-
 
 /*Damos un color de fondo y cambio de color de fuente*/
 
@@ -139,28 +139,25 @@ footer {
   font-size: 12px;
 }
 
-
 /*
 -------------------------------------------------------------------------------------------------------------------
 En esta sección se aplicaran reglas para cambiar aspecto de fuentes y estilo de texto
 -------------------------------------------------------------------------------------------------------------------
 */
 
-
 /* Con esta regla queremos evitar que los párrafos dentro de estas clases sean afectados por el alineamiento principal que es texto centrado.*/
 
-.headAarticle p:last-child, .autor_info{
+.headAarticle p:last-child,
+.autor_info {
   text-align: left;
 }
-
 
 /* Con regla queremos dar una tamaño de fuente mas pequeña al pie de cada imagen y video*/
 
 figcaption {
-    margin: 5px;
-    font-size: xx-small;
+  margin: 5px;
+  font-size: xx-small;
 }
-
 
 /* Estas reglas definen la fuente a ser usada en los títulos y su alineación correspondiente*/
 
@@ -174,17 +171,23 @@ h2 {
   font-size: 40px;
 }
 
-#livejournal, #penzu, #diario {
+#livejournal,
+#penzu,
+#diario {
   font-size: 35px;
   font-weight: lighter;
-}  
+}
 
-main, nav, header {
+main,
+nav,
+header {
   font-family: "Helvetica", "Arial", "sans-serif";
 }
 
-div.autor_info cite, .quote figcaption,
-.quote blockquote, span.names {
+div.autor_info cite,
+.quote figcaption,
+.quote blockquote,
+span.names {
   font-family: "Georgia", "Times", "serif";
 }
 
@@ -200,27 +203,22 @@ div.autor_info p {
   font-size: 12px;
 }
 
-
 /*
 -------------------------------------------------------------------------------------------------------------------
 En esta sección se adicionan reglas extra para página dietarios, no incluidas anteriormente
 -------------------------------------------------------------------------------------------------------------------
 */
 
-
 /* Estas regla adcuada la listas*/
-
-
 
 /* Estilo a las viñetas y adaptación de márgenes para centrado */
 
-ul.dietarios  {
+ul.dietarios {
   list-style: square;
   font-size: 25px;
   margin-bottom: 30px;
   margin-left: 20px;
 }
-
 
 /* modificara la fuente y la altura de línea */
 
@@ -232,7 +230,7 @@ ol {
 /* Aplicar estilo a la blockquoete y su contenedor en dietarios*/
 
 .quote {
-  margin-left: 50%; 
+  margin-left: 50%;
   background: #eee;
   border-right: #9a0150 2px solid;
   text-align: right;
@@ -255,7 +253,3 @@ ol {
 span.names {
   font-style: italic;
 }
-
-
-
-
