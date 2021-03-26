@@ -18,7 +18,7 @@ body {
 
 /* Con este selector colocamos un ancho general para el contenido  */
 article {
-  width: 70%;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
@@ -26,7 +26,7 @@ article {
 
 /* Con esta clase alineamos una pequeña sección <div> al inicio, dentro de articulo, y el final de mismo. */
 .headAarticle {
-  width: 65%;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -111,7 +111,7 @@ En esta sección se dará formato a al apartado donde se da información del aut
 /*Con esta regla queremos aplicar a la imagen dentro del contendor con la clase indica un aspecto redondeado, y moverlo ligeramente a la derecha*/
 
 div.autor_info img {
-  width: 25%;
+  width: 23%;
   border-radius: 50%;
   margin-right: 10px;
   float: left;
@@ -168,7 +168,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 43px;
 }
 
 #livejournal,
@@ -240,7 +240,7 @@ ol {
 
 .quote figcaption,
 .quote blockquote {
-  margin: 1em;
+  margin: 16px;
   font-size: 20px;
 }
 
