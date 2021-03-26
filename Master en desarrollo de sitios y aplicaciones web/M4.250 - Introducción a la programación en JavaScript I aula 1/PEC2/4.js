@@ -9,13 +9,19 @@ Alumno: Ivan Schartun
 let numero = prompt("Inserte numero entero real: ");
 let colector = "";
 
-// Cambio de string a numero entero 
-
-numero = parseInt(numero);
 
 // Metodo de calculo 
 
-if ( numero > 1 ) {
+if ( numero === "" || numero === undefined || isNaN(numero) === true || numero % 1 !== 0 || numero <= 1 ) {
+
+  console.log("Valor insertado no es valido por lo que no se puede descomponer");
+
+} else {
+      
+  // Cambio de string a numero entero 
+
+  numero = parseInt(numero);
+  
   for( i = 2 ; i <= numero; i++ ) {
     while( numero % i === 0 ) {
       colector = colector + i + "*";
@@ -24,10 +30,7 @@ if ( numero > 1 ) {
          colector = colector.slice(0, -1);   //removemos el ultimo " * " generado
         break;
       }
-    }
   }
-
-} else {
-  console.log("no es un numero real positivo")
+  }console.log(colector);
+  
 }
-console.log(colector);
