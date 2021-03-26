@@ -14,8 +14,8 @@ let cobro;
 // Comprobamos que el valor de sueldo sea un numero, he inclusive que se haya usado "." como decimal
 
 
-if ( isNaN(sueldo) ) {
-    console.log("El valor de sueldo no es un numero, por favor cargue el programa para introducir nuevamente");
+if ( (isNaN(sueldo)) || (sueldo < 0) ){
+    console.log("El valor de sueldo no valido, por favor cargue el programa para introducir nuevamente");
 } else {
 
     // Formula que calcula el sueldo que recibira el empleado
@@ -25,7 +25,6 @@ if ( isNaN(sueldo) ) {
     console.log("El sueldo a combrar es: " + cobro);  
     
 }
-
 
 
 
