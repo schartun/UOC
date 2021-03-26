@@ -8,21 +8,21 @@ Alumno: Ivan Schartun
 // Declaracion de variables principales a ser utilizadas
 
 
-let a = prompt("Introducir un entero para el valor de A: ");
-let b = prompt("Introducir un entero para el valor de B: ");
-let c = prompt("Introducir un entero para el valor de C: ");
+let a = prompt("Introducir un numero entero para el valor de A: ");
+let b = prompt("Introducir un numero entero para el valor de B: ");
+let c = prompt("Introducir un numero entero para el valor de C: ");
 
 // Mostrar por consola los valores ingresados segun el orden a,b,c
 
-console.log("Números introducidos: " + a, b, c);
+console.log("Valores introducidos: " + " a:" + a+ " b:" + b+ " c:" + c);
 
 //Comprobacion que los valores ingresados son numeros entereos, y no sean float, ni strings
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
 if (isNaN(a) || isNaN(b) || isNaN(c) ){
-    console.log("Uno de los valores introducidos no es un número, cargue el programa para introducir nuevamente");
+    console.log("Uno o mas de los valores introducidos no es un número valido, cargue el programa para introducir nuevamente");
 } else if ((a % 1 !== 0)||(b % 1 !== 0)||(c % 1 !== 0)) {
-    console.log("Uno de los valores introducidos es un numero decimal, cargue el programa para introducir nuevamente");
+    console.log("Uno o mas de los valores introducidos es un numero decimal, cargue el programa para introducir nuevamente");
     } else {
 
         //Valores ingresados no sean String
