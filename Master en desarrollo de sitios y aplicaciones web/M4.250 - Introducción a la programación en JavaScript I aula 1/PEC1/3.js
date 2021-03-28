@@ -15,7 +15,7 @@ let cobro;
 
 
 if ( (isNaN(sueldo)) || (sueldo < 0) ){
-    console.log("El valor de sueldo no valido, por favor cargue el programa para introducir nuevamente");
+    console.log("El valor de sueldo no es valido, por favor cargue el programa para introducir nuevamente");
 } else {
 
     // Formula que calcula el sueldo que recibira el empleado
