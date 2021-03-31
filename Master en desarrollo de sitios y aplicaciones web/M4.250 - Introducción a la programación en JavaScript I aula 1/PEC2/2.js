@@ -9,6 +9,7 @@ Alumno: Ivan Schartun
 let base = prompt("Introduzca un numero entero para la base: ");
 let exponente = prompt("Introduzca un numero entero para el exponente: ");
 let resultado = 1;
+let serieExponente = "";
 
 
 
@@ -24,10 +25,11 @@ if ( base <= 0 || exponente <= 0 || base === "" || exponente === "" || base === 
   base = parseInt(base);
   exponente = parseInt(exponente);
     
-  while ( exponente > 0) {
+  for ( i = exponente; i > 0; i-- ){
+    serieExponente = serieExponente +  base + "*";
+    secuencia = serieExponente.slice(0, -1); 
     resultado *= base;
-    exponente -=1;
   }
-  console.log(resultado);
+  console.log(secuencia +"="+ resultado);
 
   }
