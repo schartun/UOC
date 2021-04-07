@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Inscripción</title>
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+<body>
+    <header>
+        <h1>torrextorre<img src="img/isologo-white.png" alt="Logo de torrextorre"></h1>
+        <nav >
+          <ul>
+            <li><a href="el-ajedrez.html"></a>El ajedrez</li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+          <h1>Inscripción a los cursos</h1>
+          <p>Los campos señalados con * son obligatorios</p>
+          <form action="post">
+            <section>
+              <fieldset>
+                <legend>Selección del curso</legend>
+                <label for="curso">Escoja un curso *</label>
+                <select name="curso" id="cursoSelecion">
+                  <option value="Ninguno">Seleccione una opción</option>
+                  <option value="Nivel inicial y medio">Nivel inicial y medio</option>
+                  <option value="Nivel avanzado">Nivel avanzado</option>
+                </select>
+              </fieldset>
+            </section>
+
+            <section>
+              <fieldset>
+                <legend>Datos personales y de contacto</legend>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" id="apellidos" name="apellidos">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email">
+                <label for="tel">Correo electrónico *</label>
+                <input type="tel" id="tel" name="tel">
+                <label for="date">Correo electrónico *</label>
+                <input type="date" id="date" name="date">
+              </fieldset>
+            </section>
+
+            <section>
+              <fieldset>
+                <legend>Otras informaciones</legend>
+                <label for="mensaje">¿Por qué está interesado en hacer un curso de ajedrez?</label>
+                <textarea id="mensaje" name="mensajeUsuario" rows="10" cols="50"></textarea>
+
+                <label for="medio">¿Por qué medio nos ha conocido?</label>
+                <select name="medioComunicacion" id="medio">
+                  <option value="Ninguno">Seleccione una opción</option>
+                  <option value="Redes sociales">Redes sociales</option>
+                  <option value="Buscadores de Internet">Buscadores de Internet</option>
+                  <option value="Otro participante">Otro participante</option>
+                </select>
+              </fieldset>
+            </section>
+
+            <section>
+              <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE TORRE POR TORRE. Finalidades: recogida de datos para la inscripción en los cursos. Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, excepto obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@torrextorre.org. Información Adicional: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
+              <p>
+                <label for="acuerdo">
+                  <input type="checkbox" id="acuerdo" name="acuerdoCliente" value="OK">He leído y acepto la <a href="">política de privacidad</a> *
+                </label>
+              </p>
+              <p>
+                <button type="submit">ENVIAR</button>
+              </p>
+
+            </section>
+          </form>
+  
+        </article>
+        <footer>
+          <p>2021 &#169; Ivan Schartun</p>
+          <p><a href="">Aviso Legal</a> &#183; <a href="">Politica de Privacidad</a> &#183; <a href="">Politica de cookies</a></p>
+        </footer>
+    </main>
+</body>
+</html>
