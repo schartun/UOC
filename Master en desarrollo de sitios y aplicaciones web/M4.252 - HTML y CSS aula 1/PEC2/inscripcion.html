@@ -12,7 +12,7 @@
     </head>
 <body>
     <header>
-        <h1>torrextorre<img src="img/isologo-white.png" alt="Logo de torrextorre"></h1>
+        <h1>torrextorre<a href="index.html"><img src="img/isologo-white.png" alt="Logo de torrextorre"></a></h1>
         <nav >
           <ul>
             <li><a href="el-ajedrez.html"></a>El ajedrez</li>
@@ -30,7 +30,7 @@
               <fieldset>
                 <legend>Selección del curso</legend>
                 <label for="curso">Escoja un curso *</label>
-                <select name="curso" id="cursoSelecion">
+                <select name="cursoSelecion" id="curso" required>
                   <option value="Ninguno">Seleccione una opción</option>
                   <option value="Nivel inicial y medio">Nivel inicial y medio</option>
                   <option value="Nivel avanzado">Nivel avanzado</option>
@@ -42,15 +42,15 @@
               <fieldset>
                 <legend>Datos personales y de contacto</legend>
                 <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" required>
                 <label for="apellidos">Apellidos *</label>
-                <input type="text" id="apellidos" name="apellidos">
+                <input type="text" id="apellidos" name="apellidos" required>
                 <label for="email">Correo electrónico *</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="tel">Correo electrónico *</label>
-                <input type="tel" id="tel" name="tel">
+                <input type="tel" id="tel" name="tel" required>
                 <label for="date">Correo electrónico *</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" required>
               </fieldset>
             </section>
 
@@ -71,7 +71,7 @@
             </section>
 
             <section>
-              <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE TORRE POR TORRE. Finalidades: recogida de datos para la inscripción en los cursos. Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, excepto obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@torrextorre.org. Información Adicional: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
+              <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>TORRE POR TORRE. Finalidades</strong>: recogida de datos para la inscripción en los cursos. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@torrextorre.org">info@torrextorre.org</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
               <p>
                 <label for="acuerdo">
                   <input type="checkbox" id="acuerdo" name="acuerdoCliente" value="OK">He leído y acepto la <a href="">política de privacidad</a> *
