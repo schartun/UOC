@@ -42,9 +42,9 @@
               <fieldset>
                 <legend>Datos personales y de contacto</legend>
                 <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z\u00C0-\u00FF\-]{2,64}" required>
                 <label for="apellidos">Apellidos *</label>
-                <input type="text" id="apellidos" name="apellidos" required>
+                <input type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z\u00C0-\u00FF\-]{2,128}" required>
                 <label for="email">Correo electrónico *</label>
                 <input type="email" id="email" name="email" required>
                 <label for="tel">Correo electrónico *</label>
