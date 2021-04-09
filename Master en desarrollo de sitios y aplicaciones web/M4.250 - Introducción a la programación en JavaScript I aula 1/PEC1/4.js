@@ -16,7 +16,7 @@ let c = prompt("Introducir un numero entero para el valor de C: ");
 
 console.log("Valores introducidos: " + " a:" + a+ " b:" + b+ " c:" + c);
 
-//Comprobacion que los valores ingresados son numeros entereos, y no sean float, ni strings
+//Comprobacion que los valores ingresados son numeros entereos, y no sean float (decïmal con "."), ni strings
 
 
 if (isNaN(a) || isNaN(b) || isNaN(c) ){
