@@ -1,0 +1,71 @@
+/* importamos el tipo de letra a usar */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Regla que permite un reset general y establece un tamano de letra estandar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.backgroundIndex {
+  background-image: url(../img/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleIndex h1 {
+  font-size: 12rem;
+  color: #ffffff;
+}
+
+.titleIndex p {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-flex;
+  color: #fff;
+  padding-left: 0.75em;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.links-list a:hover {
+  color: rgb(153, 17, 17);
+}
+
+span {
+  color: rgb(153, 17, 17);
+  font-size: 12rem;
+}
+
+.titleIndex img {
+  padding-left: 1rem;
+}
+
+section {
+  margin-top: 10%;
+}
+
+nav,
+section,
+footer {
+  margin-left: 13%;
+}
+
+footer {
+}
