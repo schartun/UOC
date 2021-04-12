@@ -17,6 +17,7 @@ En esta sección se dará formato inicial a los estilos de fuente general y rese
   font-size: 10px;
   font-family: "Noto Sans", sans-serif;
   color: rgb(23, 23, 23);
+  text-decoration: none;
 }
 
 /*
@@ -40,12 +41,6 @@ nav a {
   padding-left: 0.5rem;
 }
 
-/* Regla que na estilo a los enlaces en menu Nav  (aplica para todas las paginas) */
-
-nav a,
-footer a {
-  text-decoration: none;
-}
 
 nav a,
 section.indexPage h1,
@@ -59,6 +54,8 @@ a {
   ); /*adicional color blanco para texto en index.html */
 }
 
+/*Regla que permite contraste en hover y span X*/
+
 a:hover,
 span {
   color: rgb(153, 17, 17);
@@ -66,8 +63,8 @@ span {
 
 /* Regla de espacio a la izquierda para contenido de todas las paginas */
 
-.indexPage {
-  width: 72%;
+.indexPage, .alingRest, .footRest {
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -117,48 +114,96 @@ En esta sección se dará formato a al resto de paginas
 -------------------------------------------------------------------------------------------------------------------
 */
 
+/* Regla que coloca color de fondo a la cabecera y pie de pagina*/
+
 header.headerRest,
-footer.footRest {
+footer {
   background-color: rgb(0, 0, 0);
 }
 
+/* Regla que da color a el encabezado en cabecera y lista de navegación, y pie de pagina*/
+
 h1.alingRest a,
-nav.alingRest a {
+nav.alingRest a, section.footRest a {
   color: rgb(255, 255, 255);
 }
+
+/*Regla para espaciamiento de ul en cabecera*/
 
 nav.alingRest ul {
   margin-top: 0rem;
   margin-bottom: 2rem;
 }
 
+/* Reglas que dan formato a encabezado en cabecera, y ista de navegación en fuente*/
+
 h1.alingRest a,
 span {
   font-size: 3rem;
-  text-decoration: none;
+
 }
 
 nav.alingRest a {
   font-size: 1.2rem;
 }
 
-nav.alingRest a:hover {
+/* Regla que da un fondo de color de contraste a en laces y dashed en enlaces de texto */
+
+article a {
+  border-bottom: 0.1rem dashed;
+
+}
+
+nav.alingRest, article a:hover {
   color: rgb(153, 17, 17);
 }
+
+
+/* Regla para estilo de logo en encabezado de paginas */
 
 h1.alingRest img {
   width: 2%;
   margin-right: 1.1rem;
 }
 
-.alingRest {
-  width: 72%;
-  margin-left: auto;
-  margin-right: auto;
+
+/* Regla aplica color a las fuentes de texto*/
+article p,a,li,dt,dd,strong,time {
+  color: rgb(23, 23, 23);
+  font-size: 1.2rem;
 }
 
-article.alingRest p,
-footer.alingRest,
-.alingRest a {
-  color: rgb(23, 23, 23);
+.current {
+  font-weight: bold;
 }
+
+
+
+article {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+article h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-top: 1.2rem;
+  line-height: 2rem;
+}    
+
