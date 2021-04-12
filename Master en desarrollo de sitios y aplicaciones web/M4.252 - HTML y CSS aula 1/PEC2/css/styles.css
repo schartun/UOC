@@ -1,0 +1,164 @@
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato inicial a los estilos de fuente general y reset general de propiedades basicas
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* importamos el tipo de letra a usar */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Regla que permite un reset general y establece un tamano de letra estandar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(23, 23, 23);
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a la pagin inicial
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla que quitar el estilo a la lista no ordenaa del menu nav (aplica para todas las paginas) */
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin-top: 2rem;
+}
+
+/* Regla que na estilo a los enlaces en menu Nav  (aplica para todas las paginas) */
+
+nav a {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+
+/* Regla que na estilo a los enlaces en menu Nav  (aplica para todas las paginas) */
+
+nav a,
+footer a {
+  text-decoration: none;
+}
+
+nav a,
+section.indexPage h1,
+p,
+footer p,
+a {
+  color: rgb(
+    255,
+    255,
+    255
+  ); /*adicional color blanco para texto en index.html */
+}
+
+a:hover,
+span {
+  color: rgb(153, 17, 17);
+}
+
+/* Regla de espacio a la izquierda para contenido de todas las paginas */
+
+.indexPage {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Regla para dar formato a encabezado principal de pagina principal */
+
+.indexPage h1,
+.indexPage span {
+  font-size: 12rem;
+  display: inline-block;
+}
+
+.indexPage img {
+  padding-left: 1rem;
+}
+
+.centerHeaderIndex {
+  padding: 13rem 0;
+}
+
+/* Regla para dar formato a parrafo en encabezado principal de pagina principal */
+
+section.indexPage h1 ~ p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Regla para imagen de fonde index.html*/
+
+.backgroundIndex {
+  background-image: url(../img/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Regla para colocar en footer en el fondo pagina (aploca para todas las demas)*/
+
+footer {
+  padding-top: 4rem;
+  font-size: 1.2rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a al resto de paginas
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+header.headerRest,
+footer.footRest {
+  background-color: rgb(0, 0, 0);
+}
+
+h1.alingRest a,
+nav.alingRest a {
+  color: rgb(255, 255, 255);
+}
+
+nav.alingRest ul {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+h1.alingRest a,
+span {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+nav.alingRest a {
+  font-size: 1.2rem;
+}
+
+nav.alingRest a:hover {
+  color: rgb(153, 17, 17);
+}
+
+h1.alingRest img {
+  width: 2%;
+  margin-right: 1.1rem;
+}
+
+.alingRest {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.alingRest p,
+footer.alingRest,
+.alingRest a {
+  color: rgb(23, 23, 23);
+}
