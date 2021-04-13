@@ -41,7 +41,6 @@ nav a {
   padding-left: 0.5rem;
 }
 
-
 nav a,
 section.indexPage h1,
 p,
@@ -61,9 +60,15 @@ span {
   color: rgb(153, 17, 17);
 }
 
+a.exceptionHover {
+  color: blue;
+}
+
 /* Regla de espacio a la izquierda para contenido de todas las paginas */
 
-.indexPage, .alingRest, .footRest {
+.indexPage,
+.alingRest,
+.footRest {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -124,7 +129,8 @@ footer {
 /* Regla que da color a el encabezado en cabecera y lista de navegación, y pie de pagina*/
 
 h1.alingRest a,
-nav.alingRest a, section.footRest a {
+nav.alingRest a,
+section.footRest a {
   color: rgb(255, 255, 255);
 }
 
@@ -140,7 +146,6 @@ nav.alingRest ul {
 h1.alingRest a,
 span {
   font-size: 3rem;
-
 }
 
 nav.alingRest a {
@@ -151,13 +156,12 @@ nav.alingRest a {
 
 article a {
   border-bottom: 0.1rem dashed;
-
 }
 
-nav.alingRest, article a:hover {
+nav.alingRest,
+article a:hover {
   color: rgb(153, 17, 17);
 }
-
 
 /* Regla para estilo de logo en encabezado de paginas */
 
@@ -166,9 +170,14 @@ h1.alingRest img {
   margin-right: 1.1rem;
 }
 
-
 /* Regla aplica color a las fuentes de texto*/
-article p,a,li,dt,dd,strong,time {
+article p,
+a,
+li,
+dt,
+dd,
+strong,
+time {
   color: rgb(23, 23, 23);
   font-size: 1.2rem;
 }
@@ -176,8 +185,6 @@ article p,a,li,dt,dd,strong,time {
 .current {
   font-weight: bold;
 }
-
-
 
 article {
   margin-top: 3rem;
@@ -205,5 +212,4 @@ article h3 {
 p {
   margin-top: 1.2rem;
   line-height: 2rem;
-}    
-
+}
