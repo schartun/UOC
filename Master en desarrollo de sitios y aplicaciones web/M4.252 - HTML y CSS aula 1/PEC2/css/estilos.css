@@ -60,21 +60,37 @@ a.exceptionHover {
 
 /*Regla para remover vinetas de UL en navegación*/
 
-nav ul {
+nav ul li {
   list-style-type: none;
-  display: inline-flex;
+  display: inline-block;
+}
+
+/*Creamos puntos falsos entre li*/
+
+nav ul li::before {
+  content: "·";
+  width: 5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+/*Quitamos el primer punto falso del li*/
+
+nav ul li:first-child::before {
+  content: "";
+  padding-right: 0rem;
 }
 
 /* Regla que dar estilo a los enlaces en menu Nav*/
 
-nav a {
+nav a,
+nav li {
   font-size: 1.4rem;
-  padding-left: 0.5rem;
 }
 
 /* Regla que dar color a los enlaces en menu Nav, y contenido footer*/
 
-nav a,
+nav *,
 footer * {
   color: rgb(255, 255, 255);
 }
