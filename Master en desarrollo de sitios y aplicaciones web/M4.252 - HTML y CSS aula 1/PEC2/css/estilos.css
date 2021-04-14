@@ -30,6 +30,12 @@ article,
   margin-right: auto;
 }
 
+/* Regla para mover contenido texto footer */
+
+footer section {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
 /*Regla para colocar fondo negro cabecera y pie de pagina*/
 
 header,
@@ -49,7 +55,7 @@ a:hover {
 
 /*Regla para dar estilo a los enlaces del texto*/
 article a {
-  border-bottom: 0.1rem dashed;
+  border-bottom: 0.1rem dotted;
 }
 
 /*Regla para evitar cambio de color en hover para encabezado*/
@@ -113,8 +119,7 @@ section h1 img {
   margin-right: 1.1rem;
 }
 
-header section,
-footer section {
+header section {
   padding-top: 2rem;
   padding-bottom: 1.3rem;
 }
@@ -136,8 +141,8 @@ article *,
 
 article,
 #sectionInscription {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 /*Reglas para dar formato a titulos dentro de texto*/
@@ -149,7 +154,8 @@ article h1,
   margin-bottom: 1.5rem;
 }
 
-article h2 {
+article h2,
+h2 time {
   font-size: 2rem;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
@@ -166,6 +172,11 @@ article h3 {
 p {
   margin-top: 1.2rem;
   line-height: 2rem;
+}
+
+/* Regla para reset de margenes parrafos en footer */
+footer p {
+  margin-top: 0rem;
 }
 
 /*Reglas para centrar el contenido de figure, y dimisnsionar el contenido*/
@@ -185,4 +196,129 @@ figure img {
 
 figcaption {
   font-size: 1rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a la tabla
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla para otorgar ancho completo al figure de la tabla */
+
+figure.table {
+  width: 100%;
+}
+
+/* Regla para alinear figcaption de tabla */
+
+figure.table figcaption {
+  margin-top: 1.2rem;
+  text-align: left;
+}
+
+/* Regla para modificar border de tabla y alinearla con respecto al figure */
+
+table {
+  border-collapse: collapse;
+  border: 1px solid rgb(23, 23, 23);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2rem;
+  width: 75%;
+}
+
+/* Regla para dar estilo a bordes de cabecera */
+
+thead {
+  border: 1px solid rgb(23, 23, 23);
+}
+
+/* Regla para dar estilo a caption de tabla, bordes y tamano de fuente */
+caption {
+  border: 1px solid rgb(23, 23, 23);
+  border-bottom-style: hidden;
+  font-size: 1.8rem;
+}
+
+/* Regla para alinear contenido de cabecera y dar estilo a su fuente */
+
+thead tr th {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Regla para alinear contenido de cuerpo de tabla */
+
+tbody th,
+td {
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Regla para crear líneas de cebra de la tabla */
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Regla para aumentar tamano de fuente a cabeceras de cada row */
+
+th[scope="row"] {
+  font-size: 1.5rem;
+}
+
+/* Reglas para proporcionar anchos de celda segun mok */
+
+thead tr th:nth-child(1),
+thead tr th:nth-child(2) {
+  width: 20%;
+}
+
+thead tr th:nth-child(3) {
+  width: 17%;
+}
+
+td:nth-child(4) {
+  padding-right: 2.5rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a las listas de cursos
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+article.cursos ul {
+  padding-left: 2.5rem;
+  width: 70%;
+  line-height: 2rem;
+  list-style-type: square;
+}
+
+article.cursos dl {
+  width: 70%;
+}
+
+.ulLeft ul,
+.ulLeft dl {
+  margin-left: 30%;
+}
+
+section h2,
+section h3 {
+  margin-left: 25%;
+}
+
+dt {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+dd {
+  line-height: 2rem;
 }
