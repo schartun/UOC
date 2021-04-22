@@ -23,7 +23,7 @@ function todayIs() {
     currentMonth = yearMonth[month];
     
     
-    // Impresion por consola
+    // Impresion por consola de fecha actual
     console.log(date + " de " + currentMonth + " de " +  year);
   
   }
