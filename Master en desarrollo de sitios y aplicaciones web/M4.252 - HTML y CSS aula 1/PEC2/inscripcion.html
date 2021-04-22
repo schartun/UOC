@@ -27,36 +27,54 @@
         <section id="sectionInscription">
           <h1>Inscripción a los cursos</h1>
           <p>Los campos señalados con * son obligatorios</p>
+
           <form action="post">
-            <section>
+
+            <div>
               <fieldset>
                 <legend>Selección del curso</legend>
                 <label for="curso">Escoja un curso *</label>
                 <select name="cursoSelecion" id="curso" required>
-                  <option value="Ninguno">Seleccione una opción</option>
+                  <option value="">Seleccione una opción</option>
                   <option value="Nivel inicial y medio">Nivel inicial y medio</option>
                   <option value="Nivel avanzado">Nivel avanzado</option>
                 </select>
               </fieldset>
-            </section>
+            </div>
 
-            <section>
+            <div>
               <fieldset>
                 <legend>Datos personales y de contacto</legend>
+
+                <div class="datosPersonales">
                 <label for="nombre">Nombre *</label>
                 <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z\u00C0-\u00FF\-]{2,64}" required>
+                </div>
+
+                <div class="datosPersonales">
                 <label for="apellidos">Apellidos *</label>
                 <input type="text" id="apellidos" name="apellidos" pattern="[a-zA-Z\u00C0-\u00FF\-]{2,128}" required>
+                </div>
+                
+                <div class="datosPersonales">
                 <label for="email">Correo electrónico *</label>
                 <input type="email" id="email" name="email" required>
-                <label for="tel">Correo electrónico *</label>
-                <input type="tel" id="tel" name="tel" required>
-                <label for="date">Correo electrónico *</label>
-                <input type="date" id="date" name="date" required>
-              </fieldset>
-            </section>
+                </div>
 
-            <section>
+                <div class="datosPersonales">
+                <label for="tel">Telefono *</label>
+                <input type="tel" id="tel" name="tel" required>
+                </div>
+
+                <div>
+                <label for="date">Fecha de Nacimiento *</label>
+                <input type="date" id="date" name="date" required>
+               </div>
+
+              </fieldset>
+            </div>
+
+            <div>
               <fieldset>
                 <legend>Otras informaciones</legend>
                 <label for="mensaje">¿Por qué está interesado en hacer un curso de ajedrez?</label>
@@ -64,34 +82,35 @@
 
                 <label for="medio">¿Por qué medio nos ha conocido?</label>
                 <select name="medioComunicacion" id="medio">
-                  <option value="Ninguno">Seleccione una opción</option>
+                  <option value="">Seleccione una opción</option>
                   <option value="Redes sociales">Redes sociales</option>
                   <option value="Buscadores de Internet">Buscadores de Internet</option>
                   <option value="Otro participante">Otro participante</option>
                 </select>
               </fieldset>
-            </section>
+            </div>
 
-            <section>
-              <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>TORRE POR TORRE. Finalidades</strong>: recogida de datos para la inscripción en los cursos. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@torrextorre.org">info@torrextorre.org</a>. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
+            <div class="infoExtra">
+              <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>TORRE POR TORRE. Finalidades</strong>: recogida de datos para la inscripción en los cursos. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@torrextorre.org. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de Aviso Legal y Política de privacidad.</p>
               <p>
                 <label for="acuerdo">
-                  <input type="checkbox" id="acuerdo" name="acuerdoCliente" value="OK">He leído y acepto la <a href="">política de privacidad</a> *
+                  <input type="checkbox" id="acuerdo" name="acuerdoCliente" value="OK">
+                  He leído y acepto la <a href="">política de privacidad </a>*
                 </label>
               </p>
               <p>
                 <button type="submit">ENVIAR</button>
               </p>
 
-            </section>
+            </div>
           </form>
   
         </section>
         <footer>
-          <section>
+          <div>
           <p>2021 &#169; Ivan Schartun</p>
           <p><a href="">Aviso Legal</a> &#183; <a href="">Politica de Privacidad</a> &#183; <a href="">Politica de cookies</a></p>
-        </section>
+          </div>
         </footer>
     </main>
 </body>

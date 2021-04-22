@@ -22,8 +22,10 @@ En esta sección se dará formato a paginas: ajedrez,cursos, Inscripción
 /*Regla para alinear contenido, cabecera y pie de pagina*/
 
 header section,
-footer section,
+footer div,
 article,
+header.indexPage nav,
+section.indexPage,
 #sectionInscription {
   width: 60%;
   margin-left: auto;
@@ -32,14 +34,14 @@ article,
 
 /* Regla para mover contenido texto footer */
 
-footer section {
+footer div {
   padding-top: 1rem;
   padding-bottom: 3.5rem;
 }
 /*Regla para colocar fondo negro cabecera y pie de pagina*/
 
-header,
-footer {
+header:not(.indexPage),
+footer:not(.indexPage) {
   background-color: rgb(0, 0, 0);
 }
 
@@ -54,13 +56,18 @@ a:hover {
 }
 
 /*Regla para dar estilo a los enlaces del texto*/
-article a {
+article a,
+section a {
   border-bottom: 0.1rem dotted;
 }
 
-/*Regla para evitar cambio de color en hover para encabezado*/
+/*Regla para evitar cambio de color en hover para encabezado. Dar color a los enlaces en menu Nav, y contenido footer, y texto de p y h1 de index.html*/
 
-a.exceptionHover {
+a.exceptionHover,
+nav *,
+footer *,
+section.indexPage h1,
+section.indexPage p {
   color: rgb(255, 255, 255);
 }
 
@@ -92,13 +99,6 @@ nav ul li:first-child::before {
 nav a,
 nav li {
   font-size: 1.4rem;
-}
-
-/* Regla que dar color a los enlaces en menu Nav, y contenido footer*/
-
-nav *,
-footer * {
-  color: rgb(255, 255, 255);
 }
 
 /*Regla para dar estilo de fuente en encabezado de header*/
@@ -321,4 +321,137 @@ dt {
 
 dd {
   line-height: 2rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a index.html
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla establecer tamano de fuente del encabezado y pocisionamiento */
+
+.indexPage h1,
+.indexPage span {
+  font-size: 11rem;
+  display: inline-block;
+}
+
+/* Regla para imagen de fonde index.html*/
+
+.backgroundIndex {
+  background-image: url(../img/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Reglas para dar estilo a la imagen del encabezado, tamano y posicion*/
+
+section.indexPage img {
+  width: 9%;
+  margin-left: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+/*Regla para dar estilo a unico parrafo de encabezado */
+section.indexPage h1 + p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Regla para dar espacion superior a menu de navegacion*/
+
+header.indexPage nav {
+  margin-top: 2rem;
+}
+
+/* Regla para dar espacion superior e inferior a seccion que contiene el emcabezado*/
+
+section.indexPage {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato al formulario
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+textarea {
+  overflow: auto;
+  width: 100%;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  padding-top: 3rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  border: 0.1rem solid rgb(23, 23, 23);
+  margin-top: 1.5rem;
+}
+
+label,
+textarea {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+select,
+input {
+  margin: 0 0 1em 0;
+  padding: 10px;
+  width: 35%;
+}
+
+div.datosPersonales {
+  display: inline-block;
+  width: 32rem;
+}
+
+div.datosPersonales input {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 10px;
+}
+
+div.infoExtra {
+  margin-top: 4rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  /* 
+  It works well in Google Chrome, Microsoft Edge. But in Mozilla Firefox the clickable checkbox area is as defined, but it shows a default size checkbox. , in that case we could use transform property, but not cover in this PEC*/
+}
+
+button {
+  background-color: rgb(153, 17, 17);
+  border: none;
+  color: white;
+  padding: 1.5rem 3.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  border-radius: 5%;
+}
+
+#sectionInscription > p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input:invalid:required {
+  background-color: rgba(0, 0, 0, 0.1);
 }
