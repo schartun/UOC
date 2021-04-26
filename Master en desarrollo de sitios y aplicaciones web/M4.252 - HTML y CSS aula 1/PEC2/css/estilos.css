@@ -21,11 +21,11 @@ En esta sección se dará formato general a paginas: ajedrez,cursos, Inscripció
 
 /*Regla para alinear contenido, cabecera y pie de pagina*/
 
-header section,
+header div,
 footer div,
 article,
 header.indexPage nav,
-section.indexPage,
+div.indexPage,
 #sectionInscription {
   width: 60%;
   margin-left: auto;
@@ -65,8 +65,8 @@ article a {
 a.exceptionHover,
 nav *,
 footer *,
-section.indexPage h1,
-section.indexPage p {
+div.indexPage h1,
+div.indexPage p {
   color: rgb(255, 255, 255);
 }
 
@@ -106,7 +106,7 @@ nav li {
 
 /*Regla para dar estilo de fuente en encabezado de header*/
 
-header section h1 a,
+header div h1 a,
 span {
   font-size: 3rem;
 }
@@ -117,14 +117,14 @@ span {
 
 /*Regla para dar estilo a logo de navegacion, salvo index.hmtl*/
 
-section h1 img {
+div h1 img {
   width: 3%;
   margin-right: 1.1rem;
 }
 
 /*Regla para dar espacio en contenido de header*/
 
-header section {
+header div {
   padding-top: 2rem;
   padding-bottom: 1.3rem;
 }
@@ -322,6 +322,7 @@ dt {
   font-size: 1.5rem;
   font-weight: bold;
   border-bottom: 1px solid rgb(0, 0, 0);
+  margin-top: 1rem;
 }
 
 dd {
@@ -353,14 +354,14 @@ En esta sección se dará formato a index.html
 
 /*Reglas para dar estilo a la imagen del encabezado, tamano y posicion*/
 
-section.indexPage img {
+div.indexPage img {
   width: 9%;
   margin-left: 0.7rem;
   margin-bottom: 0.5rem;
 }
 
 /*Regla para dar estilo a unico parrafo de encabezado */
-section.indexPage h1 + p {
+div.indexPage h1 + p {
   font-size: 3rem;
   font-weight: bold;
 }
@@ -373,7 +374,7 @@ header.indexPage nav {
 
 /* Regla para dar espacion superior e inferior a seccion que contiene el emcabezado*/
 
-section.indexPage {
+div.indexPage {
   margin-top: 15rem;
   margin-bottom: 15rem;
 }
