@@ -132,7 +132,7 @@ header div {
 /*Regla para resaltar en que pagina se encuentra usuario*/
 
 .current {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*Regla para establcer tamano de fuente en texto*/
@@ -297,27 +297,31 @@ En esta sección se dará formato a las listas de cursos
 -------------------------------------------------------------------------------------------------------------------
 */
 
+/*Con estas reglas creamos dos contenedores para cada clase de division derecha e izquierda, de ul / dl*/
+.ulLeft,
+.right {
+  width: 70%;
+}
+
+/*Con esta Reglas movemos a la izquierda la division con la clase asignada*/
+
+.ulLeft {
+  margin-left: 30%;
+}
+
+/*Con estas regla damos formato de espacio a los contenidos detro e ul y dl */
+
 article.cursos ul {
   padding-left: 2.5rem;
-  width: 70%;
   line-height: 2rem;
   list-style-type: square;
 }
 
 article.cursos dl {
-  width: 70%;
+  padding-left: 2rem;
 }
 
-.ulLeft ul,
-.ulLeft dl {
-  margin-left: 30%;
-}
-
-section h2,
-section h3 {
-  margin-left: 25%;
-}
-
+/*Con la regla se da estilo a cada dt dentro de su dl*/
 dt {
   font-size: 1.5rem;
   font-weight: bold;
@@ -325,6 +329,7 @@ dt {
   margin-top: 1rem;
 }
 
+/*Regla que otroga espacion de linea entre dd*/
 dd {
   line-height: 2rem;
 }
