@@ -104,11 +104,12 @@ nav li {
   font-size: 1.4rem;
 }
 
-/*Regla para dar estilo de fuente en encabezado de header*/
+/*Regla para dar estilo de fuente en nombre de header*/
 
-header div h1 a,
+header div > a,
 span {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 span {
@@ -117,7 +118,7 @@ span {
 
 /*Regla para dar estilo a logo de navegacion, salvo index.hmtl*/
 
-div h1 img {
+div > img {
   width: 3%;
   margin-right: 1.1rem;
 }
