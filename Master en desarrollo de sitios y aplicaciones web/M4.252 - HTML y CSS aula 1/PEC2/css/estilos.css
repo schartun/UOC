@@ -394,6 +394,8 @@ En esta sección se dará formato al formulario
 /* Regla para definir el ancho por defecto del textarea y su comportamiento en caso de overflow*/
 textarea {
   overflow: auto;
+  resize: both;
+  max-width: 65rem;
   width: 100%;
 }
 
@@ -408,8 +410,8 @@ legend {
 fieldset {
   padding-top: 3rem;
   padding-right: 5rem;
+  padding-left: 5rem;
   padding-bottom: 2rem;
-  padding-left: 2rem;
   border: 0.1rem solid rgb(23, 23, 23);
   margin-top: 1.5rem;
 }
@@ -436,6 +438,8 @@ input {
 div.datosPersonales {
   display: inline-block;
   width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.datosPersonales input {
@@ -485,4 +489,11 @@ button {
 
 input:invalid:required {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Regla para evitar que el field set que contiene textarea sea modificado*/
+
+.textarea {
+  max-width: 75.6rem;
+  min-width: 75.6rem;
 }
