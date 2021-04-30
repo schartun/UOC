@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-/* Regla que permite un reset general y establece un tamano de letra estandar y color texto */
+/* Regla que permite un reset general y establece un tamaño de letra estándar y color texto */
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta sección se dará formato general a paginas: ajedrez,cursos, Inscripción, e index
+En esta sección se dará formato general a páginas: ajedrez,cursos, Inscripción, e index
 -------------------------------------------------------------------------------------------------------------------
 */
 
@@ -45,7 +45,7 @@ footer:not(.indexPage) {
   background-color: rgb(0, 0, 0);
 }
 
-/*Regla para quitar linea baja por defecto de enlaces*/
+/*Regla para quitar línea  baja por defecto de enlaces*/
 a {
   text-decoration: none;
 }
@@ -55,12 +55,12 @@ a:hover {
   color: rgb(153, 17, 17);
 }
 
-/*Regla para dar estilo a los enlaces del texto, linea inferior*/
+/*Regla para dar estilo a los enlaces del texto, línea  inferior*/
 article a {
   border-bottom: 0.1rem dotted;
 }
 
-/*Regla para evitar cambio de color en hover para encabezado torrextorre. Dar color a los enlaces en menu Nav, y contenido footer, y texto de p y h1 de index.html*/
+/*Regla para evitar cambio de color en hover para encabezado torrextorre. Dar color a los enlaces en menú  Nav, y contenido footer, y texto de p y h1 de index.html*/
 
 a.exceptionHover,
 nav *,
@@ -97,7 +97,7 @@ footer ul li:first-child::before {
   padding-left: 0rem;
 }
 
-/* Regla que dar estilo a los enlaces en menu Nav*/
+/* Regla que dar estilo a los enlaces en menú  Nav*/
 
 nav a,
 nav li {
@@ -116,7 +116,7 @@ span {
   color: rgb(153, 17, 17);
 }
 
-/*Regla para dar estilo a logo de navegacion, salvo index.hmtl*/
+/*Regla para dar estilo a logo de navegación, salvo index.hmtl*/
 
 div > img {
   width: 3%;
@@ -130,13 +130,13 @@ header div {
   padding-bottom: 1.3rem;
 }
 
-/*Regla para resaltar en que pagina se encuentra usuario*/
+/*Regla para resaltar en que página  se encuentra usuario*/
 
 .current {
   font-weight: 700;
 }
 
-/*Regla para establcer tamano de fuente en texto*/
+/*Regla para establecer tamaño  de fuente en texto*/
 
 article *,
 #sectionInscription * {
@@ -151,7 +151,7 @@ article,
   margin-bottom: 5rem;
 }
 
-/*Reglas para dar formato a titulos dentro de texto*/
+/*Reglas para dar formato a títulos  dentro de texto*/
 
 article h1,
 #sectionInscription h1 {
@@ -180,12 +180,12 @@ p {
   line-height: 2rem;
 }
 
-/* Regla para reset de margenes parrafos en footer */
+/* Regla para reset de márgenes párrafos  en footer */
 footer p {
   margin-top: 0rem;
 }
 
-/*Reglas para centrar el contenido de figure, y dimisnsionar el contenido*/
+/*Reglas para centrar el contenido de figure, y dimensionar  el contenido*/
 
 figure {
   width: 65%;
@@ -240,7 +240,7 @@ thead {
   border: 1px solid rgb(23, 23, 23);
 }
 
-/* Regla para dar estilo a caption de tabla, bordes y tamano de fuente */
+/* Regla para dar estilo a caption de tabla, bordes y tamaño  de fuente */
 caption {
   border: 1px solid rgb(23, 23, 23);
   border-bottom-style: hidden;
@@ -271,13 +271,13 @@ tbody tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Regla para aumentar tamano de fuente a cabeceras de cada row */
+/* Regla para aumentar tamaño  de fuente a cabeceras de cada row */
 
 th[scope="row"] {
   font-size: 1.5rem;
 }
 
-/* Reglas para proporcionar anchos de celda segun mok */
+/* Reglas para proporcionar anchos de celda según  mok */
 
 thead tr th:nth-child(1),
 thead tr th:nth-child(2) {
@@ -298,19 +298,19 @@ En esta sección se dará formato a las listas de cursos
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/*Con estas reglas creamos dos contenedores para cada clase de division derecha e izquierda, de ul / dl*/
+/*Con estas reglas creamos dos contenedores para cada clase de división  derecha e izquierda, de ul / dl*/
 .ulLeft,
 .right {
   width: 70%;
 }
 
-/*Con esta Reglas movemos a la izquierda la division con la clase asignada*/
+/*Con esta Reglas movemos a la izquierda la división  con la clase asignada*/
 
 .ulLeft {
   margin-left: 30%;
 }
 
-/*Con estas regla damos formato de espacio a los contenidos detro e ul y dl */
+/*Con estas regla damos formato de espacio a los contenidos dentro e ul y dl */
 
 article.cursos ul {
   padding-left: 2.5rem;
@@ -330,7 +330,7 @@ dt {
   margin-top: 1rem;
 }
 
-/*Regla que otroga espacion de linea entre dd*/
+/*Regla que otorga espacio de línea entre dd*/
 dd {
   line-height: 2rem;
 }
@@ -341,7 +341,7 @@ En esta sección se dará formato a index.html
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Regla establecer tamano de fuente del encabezado y pocisionamiento */
+/* Regla establecer tamaño de fuente del encabezado y posicionamiento */
 
 .indexPage h1,
 .indexPage span {
@@ -358,7 +358,7 @@ En esta sección se dará formato a index.html
   background-size: cover;
 }
 
-/*Reglas para dar estilo a la imagen del encabezado, tamano y posicion*/
+/*Reglas para dar estilo a la imagen del encabezado, tamaño y posición*/
 
 div.indexPage img {
   width: 9%;
@@ -378,7 +378,7 @@ header.indexPage nav {
   margin-top: 2rem;
 }
 
-/* Regla para dar espacion superior e inferior a seccion que contiene el emcabezado*/
+/* Regla para dar espacio superior e inferior a sección que contiene el encabezado*/
 
 div.indexPage {
   margin-top: 15rem;
@@ -405,7 +405,7 @@ legend {
   font-weight: bold;
 }
 
-/* Regla dar estilo a cada seccion correspondiente a un fliedset*/
+/* Regla dar estilo a cada sección  correspondiente a un fliedset*/
 
 fieldset {
   padding-top: 3rem;
@@ -424,7 +424,7 @@ textarea {
   margin-bottom: 1.5rem;
 }
 
-/*Reglas dar estilo a los campos donde el usuario selecionara o ingresasra información*/
+/*Reglas dar estilo a los campos donde el usuario seleccionara o ingresara información*/
 
 select,
 input {
@@ -465,7 +465,7 @@ input[type="checkbox"] {
   It works well in Google Chrome, Microsoft Edge. But in Mozilla Firefox the clickable checkbox area is as defined, but it shows a default size checkbox. , in that case we could use transform property, but not cover in this PEC*/
 }
 
-/*Estilo para boton de formulario*/
+/*Estilo para botón  de formulario*/
 
 button {
   background-color: rgb(153, 17, 17);
