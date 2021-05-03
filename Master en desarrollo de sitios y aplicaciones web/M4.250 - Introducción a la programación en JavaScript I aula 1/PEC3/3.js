@@ -1,6 +1,9 @@
-// Escribid un programa en JavaScript que, dada una frase, la transforme y escriba por consola de manera que después de cada vocal se añada una "p" y a continuación se repita la vocal.
+/*
+M4.250 - Introducción a la programación en JavaScript I aula 1
+PEC 3
+Alumno: Ivan Schartun
+*/
 
-// Ejemplo: si la entrada és "Hola qué tal", la salida debe ser "Hopolapa qupuépé tapal"
 
 //Definición de variable
 const phrase = "Hola qué tal";

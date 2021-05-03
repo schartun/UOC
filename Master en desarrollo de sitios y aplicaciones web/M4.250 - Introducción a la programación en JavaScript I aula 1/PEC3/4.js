@@ -1,6 +1,9 @@
-// Crear un código que devuelva un array con los valores invertidos. Por ejemplo:
-// - Dado el array [1,2,3,4,5] devolverá [5,4,3,2,1]
-// - Dado [5,11,4,21,3] devolverá [3,21,4,11,5]
+/*
+M4.250 - Introducción a la programación en JavaScript I aula 1
+PEC 3
+Alumno: Ivan Schartun
+*/
+
 
 
 //Definición de variable

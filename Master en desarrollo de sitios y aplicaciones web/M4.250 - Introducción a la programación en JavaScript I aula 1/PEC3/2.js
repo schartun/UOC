@@ -1,10 +1,13 @@
-// Escribid una función en JavaScript que devuelva la fecha anterior a una fecha pasada como parámetro en formato de texto 'DD/MM/AAAA', donde DD es el día, MM el mes y AAAA el año.
+/*
+M4.250 - Introducción a la programación en JavaScript I aula 1
+PEC 3
+Alumno: Ivan Schartun
+*/
 
-// Ejemplo: si la entrada es '01/01/2019', la salida debe ser '31/12/2018'.
+// Declaracion de variables principales a ser utilizadas
 
-// let fecha = prompt("Introduzca fecha en formato 'DD/MM/AAAA':");
+let fecha = prompt("Introduzca fecha en formato 'DD/MM/AAAA':");
 
-let date = '01/01/2019';
 
 //Convertir el string a fecha para poder modificarlo
 let msDate = Date.parse(date);
