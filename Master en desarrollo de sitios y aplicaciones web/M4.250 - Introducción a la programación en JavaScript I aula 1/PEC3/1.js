@@ -16,13 +16,13 @@ let year;
 let month;
 let date;
 
-// Metodo de extración de informacion de fecha dada
+// Metodo de extración de información de fecha dada
 
 year = today.getFullYear();     
 month = today.getMonth();         
 date = today.getDate(); 
     
-// Metodo de conversion de getMonth
+// Método de conversión de getMonth
     
 currentMonth = yearMonth[month];
     
