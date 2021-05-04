@@ -6,30 +6,33 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let base = prompt("Introduzca un numero entero para la base: ");
-let exponente = prompt("Introduzca un numero entero para el exponente: ");
+let base = prompt("Introduzca un numero entero positivo para la base: ");
+let exponente = prompt("Introduzca un numero entero  positivo para el exponente: ");
 let resultado = 1;
 let serieExponente = "";
 
 
+//Comprobacion que los valores ingresados son numeros entereos positivos, y no sean float (decïmal con "."), ni strings
 
-// Metodo de calculo 
+if ( base <= 0 || exponente <= 0 || isNaN(base) || isNaN(exponente) || base % 1 !== 0 || exponente % 1 !== 0  ) 
+{
 
-if ( base <= 0 || exponente <= 0 || base === "" || exponente === "" || base === undefined || exponente === undefined || isNaN(base) === true || isNaN(exponente) === true || base % 1 !== 0 || exponente % 1 !== 0  ) {
-
-  console.log("Valor insertado no valido")
+  console.log("Uno o ambos de los valores introducidos no son números validos, cargue el programa para introducir nuevamente")
 
 } else {
 
-  // Cambio de string a numero entero 
-  base = parseInt(base);
-  exponente = parseInt(exponente);
+ // Método de calculo
+  
+ base = parseInt(base);
+ exponente = parseInt(exponente);
     
-  for ( i = exponente; i > 0; i-- ){
-    serieExponente = serieExponente +  base + "*";
-    secuencia = serieExponente.slice(0, -1); 
-    resultado *= base;
+ for ( i = exponente; i > 0; i-- ){
+   serieExponente = serieExponente +  base + "*";
+   secuencia = serieExponente.slice(0, -1); 
+   resultado *= base;
   }
-  console.log(secuencia +"="+ resultado);
-
-  }
+ 
+ // Método de presentación por consola
+  
+  console.log("Base:" + base + " Exponente:" + exponente + " , Resultado:" + secuencia + "=" + resultado);
+}

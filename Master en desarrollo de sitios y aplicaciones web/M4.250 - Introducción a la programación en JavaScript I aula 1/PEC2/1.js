@@ -7,35 +7,39 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let numero = prompt("Inserte numero entero: ");
+let numero = prompt("Inserte numero entero positivo: ");
 let cadena = 0;
 let secuencia;
+let nStop;
 
-  // Metodo de calculo de cada numero de la serie 
+//Presentación por consola de valor introducido
 
-if ( numero === "" || numero === undefined || isNaN(numero) === true || numero % 1 !== 0 || numero < 0 ) {
-  console.log("Valor insertado no es valido")
+console.log("El valor introducido es: " + numero);
+
+//Comprobacion que los valores ingresados son numeros entereos positivos, y no sean float (decïmal con "."), ni strings
+
+if ( isNaN(numero) || numero % 1 !== 0 || numero <= 0 ) {
+  console.log("Valor insertado no es valido, cargue el programa para intentar nuevamente")
 } else {
+ 
+ // Metodo de calculo de cada numero de la serie 
   
   numero = parseInt(numero);
-
-  while ( numero !== 1 ) {
+  
+  while ( nStop !== 1 ) {
       if ( numero % 2 == 0) {
       numero = numero / 2;
+      nStop = numero;  
     } else if ( numero % 2 !== 0 ) {
       numero = ( numero * 3 ) + 1; 
     }
-    // Creamos una contenedor donde se adicione cada resultado generador
+    
     cadena = cadena + numero + ",";
-
-    // Se remueve la ultima coma incluidad en la cadena final
     secuencia = cadena.slice(0, -1);
   }
-  console.log(secuencia);
+ 
+  //Método de presentación de serie por consola
+
+  console.log("La secuencia calculada es: "+ secuencia);
+ }
   
-}
-
-
-
-
-
