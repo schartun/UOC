@@ -6,20 +6,36 @@ Alumno: Ivan Schartun
 
 
 //Definición de variable
-const phrase = "Hola qué tal";
+const phrase =  prompt ("Ingrese un frase");
 const vowels = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"];
-let phraseSplited = phrase.split("");
+let phraseSplited;
 let newValue;
 let newPhrase;
 
-for ( let i = 0; i < phraseSplited.length; i++ ) {
-  for (let j = 0; j < vowels.length; j++) {
-    if ( phraseSplited[i] === vowels[j] ) {
-      newValue = phraseSplited[i] + "p" + phraseSplited[i];
-      phraseSplited[i] = newValue;
+//Método de calculo
+
+if ( phrase == null || phrase === "" || isNaN(phrase) === false) {
+
+  console.log("La frase ingresada no es valida, cargue el programa e intente nuevamente");
+
+} else {
+  phraseSplited = phrase.split("");
+  
+  for ( let i = 0; i < phraseSplited.length; i++ ) {
+    for (let j = 0; j < vowels.length; j++) {
+      if ( phraseSplited[i] === vowels[j] ) {
+        newValue = phraseSplited[i] + "p" + phraseSplited[i];
+        phraseSplited[i] = newValue;
+        newPhrase = phraseSplited.join("");
+
+      }
     }
-  }newPhrase = phraseSplited.join("");
-  
-}console.log(newPhrase);
-  
+  } 
+  //Método de presentación por consola
+  if (newPhrase === undefined) {
+    newPhrase = "La información ingresada no contiene vocales, cargue el programa e intende nuevamente";
+  }
+  console.log(newPhrase); 
+} 
+
   

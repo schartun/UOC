@@ -9,16 +9,17 @@ Alumno: Ivan Schartun
 let numero = prompt("Inserte numero entero real: ");
 let colector = "";
 
-
 // Metodo de calculo 
 
-if ( numero === "" || numero === undefined || isNaN(numero) === true || numero % 1 !== 0 || numero <= 1 ) {
+console.log("El valor ingresado N = " + numero);
 
-  console.log("Valor insertado no es valido por lo que no se puede descomponer");
+if ( isNaN(numero) || numero % 1 !== 0 || numero <= 1 ) {
+
+  console.log("Valor insertado no es valido por lo que no se puede descomponer, cargue el programa e intente nuevamente");
 
 } else {
       
-  // Cambio de string a numero entero 
+
 
   numero = parseInt(numero);
   
@@ -31,6 +32,10 @@ if ( numero === "" || numero === undefined || isNaN(numero) === true || numero %
         break;
       }
   }
-  }console.log(colector);
+  }
+ 
+  // Método de presentación por consola de resultado
+  
+  console.log("Sus factores primos son: " + colector);
   
 }
