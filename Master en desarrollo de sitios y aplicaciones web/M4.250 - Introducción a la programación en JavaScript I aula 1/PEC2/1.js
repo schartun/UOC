@@ -7,7 +7,7 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let numero = prompt("Inserte numero entero positivo: ");
+let numero = prompt("Inserte número entero positivo: ");
 let cadena = 0;
 let secuencia;
 let nStop;
@@ -19,7 +19,7 @@ console.log("El valor introducido es: " + numero);
 //Comprobacion que los valores ingresados son numeros entereos positivos, y no sean float (decïmal con "."), ni strings
 
 if ( isNaN(numero) || numero % 1 !== 0 || numero <= 0 ) {
-  console.log("Valor insertado no es valido, cargue el programa para intentar nuevamente")
+  console.log("Valor insertado no es válido, cargue el programa para intentar nuevamente")
 } else {
  
  // Metodo de calculo de cada numero de la serie 

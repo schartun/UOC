@@ -6,7 +6,7 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let numero = prompt("Inserte numero entero real: ");
+let numero = prompt("Inserte número entero real: ");
 let colector = "";
 
 // Metodo de calculo 
@@ -15,7 +15,7 @@ console.log("El valor ingresado N = " + numero);
 
 if ( isNaN(numero) || numero % 1 !== 0 || numero <= 1 ) {
 
-  console.log("Valor insertado no es valido por lo que no se puede descomponer, cargue el programa e intente nuevamente");
+  console.log("Valor insertado no es válido por lo que no se puede descomponer, cargue el programa e intente nuevamente");
 
 } else {
       

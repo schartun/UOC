@@ -16,7 +16,7 @@ let serieSuma = "";
 //Comprobacion que los valores ingresados son numeros entereos positivos, y no sean float (decïmal con "."), ni strings
 
 if ( isNaN(numero) || numero % 1 !== 0 || numero <= 0 ) {
-  console.log("Valor insertado no es valido")
+  console.log("Valor insertado no es válido")
 } else {
 
  // Método de calculo

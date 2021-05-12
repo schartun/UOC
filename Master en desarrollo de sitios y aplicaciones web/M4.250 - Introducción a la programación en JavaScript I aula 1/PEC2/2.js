@@ -6,8 +6,8 @@ Alumno: Ivan Schartun
 
 // Declaracion de variables principales a ser utilizadas
 
-let base = prompt("Introduzca un numero entero positivo para la base: ");
-let exponente = prompt("Introduzca un numero entero  positivo para el exponente: ");
+let base = prompt("Introduzca un número entero positivo para la base: ");
+let exponente = prompt("Introduzca un número entero  positivo para el exponente: ");
 let resultado = 1;
 let serieExponente = "";
 
@@ -17,7 +17,7 @@ let serieExponente = "";
 if ( base <= 0 || exponente <= 0 || isNaN(base) || isNaN(exponente) || base % 1 !== 0 || exponente % 1 !== 0  ) 
 {
 
-  console.log("Uno o ambos de los valores introducidos no son números validos, cargue el programa para introducir nuevamente")
+  console.log("Uno o ambos de los valores introducidos no son números válidos, cargue el programa para introducir nuevamente")
 
 } else {
 
