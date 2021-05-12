@@ -30,8 +30,8 @@ if (
   
 // Impresion por consola de fecha actual
 
-  console.log("El dia de ayer fue: " + yesterday.toLocaleDateString(('en-GB')));  
+  console.log("El día de ayer fue: " + yesterday.toLocaleDateString(('en-GB')));  
 } else {
-  console.log("Formato de fecha no valida, cargue nuevamente el programa e intenete con formato correcto");
+  console.log("Formato de fecha no valida, cargue nuevamente el programa e intente con formato correcto");
 }
   

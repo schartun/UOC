@@ -6,7 +6,7 @@ Alumno: Ivan Schartun
 
 
 //Definición de variable
-const phrase =  prompt ("Ingrese un frase");
+const phrase =  prompt ("Ingrese una frase");
 const vowels = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"];
 let phraseSplited;
 let newValue;
@@ -16,7 +16,7 @@ let newPhrase;
 
 if ( phrase == null || phrase === "" || isNaN(phrase) === false) {
 
-  console.log("La frase ingresada no es valida, cargue el programa e intente nuevamente");
+  console.log("La frase ingresada no es válida, cargue el programa e intente nuevamente");
 
 } else {
   phraseSplited = phrase.split("");
@@ -33,7 +33,7 @@ if ( phrase == null || phrase === "" || isNaN(phrase) === false) {
   } 
   //Método de presentación por consola
   if (newPhrase === undefined) {
-    newPhrase = "La información ingresada no contiene vocales, cargue el programa e intende nuevamente";
+    newPhrase = "La información ingresada no contiene vocales, cargue el programa e intente nuevamente";
   }
   console.log(newPhrase); 
 } 
