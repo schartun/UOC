@@ -95,6 +95,11 @@ En esta sección se establecerá un contenedor general para todas las páginas. 
   width: 90%;
 }
 
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /*
 -------------------------------------------------------------------------------------------------------------------
 En esta sección se dará formato al header del sitio web que es común para todas sus paginas
@@ -227,4 +232,50 @@ button:hover {
 
 .bottomFooter {
   margin-bottom: 2rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a index.htnl
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Cabecera de sección */
+
+section.hero {
+  background: url(../img/bg-hero-mars.jpg);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: right bottom;
+  background-color: black;
+  color: var(--text-bg-color);
+  height: 20rem;
+}
+
+section.hero div {
+  padding-top: 2rem;
+  padding-left: 0.8rem;
+}
+
+section.hero div p {
+  font-style: italic;
+}
+
+@media (min-width: 650px) {
+  section.hero div {
+    margin-left: 10rem;
+  }
+  section.hero div h1 {
+    font-size: 4rem;
+  }
+
+  section.hero div p {
+    font-size: 2rem;
+  }
+
+  section.hero {
+    background-size: contain;
+    background-position: right;
+    height: 25rem;
+  }
 }
