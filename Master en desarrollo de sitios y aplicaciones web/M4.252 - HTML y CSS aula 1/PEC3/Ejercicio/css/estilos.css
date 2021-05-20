@@ -69,8 +69,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -92,12 +91,12 @@ En esta sección se establecerá un contenedor general para todas las páginas. 
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   max-width: 1000px;
-  width: 90%;
+  width: 100%;
 }
 
 main {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
 }
 
 /*
@@ -108,16 +107,20 @@ En esta sección se dará formato al header del sitio web que es común para tod
 
 /* Regla dar espacio de barra de navegacion y tope de cabecera*/
 
-div.container,
-nav {
-  margin-top: 0.5rem;
+div.container {
+  margin-top: 0.9rem;
 }
 
 /* Regla para horizontalizar los enlaces del menu */
 
+nav {
+  margin-top: 0.6rem;
+}
+
 nav ul li {
   font-size: 1.1rem;
   margin-right: 1.2rem;
+  text-align: center;
 }
 
 /* Reglas para dar formato a cada enlace en el menú */
@@ -135,11 +138,22 @@ nav li.active {
   border-bottom: 3px solid var(--text-color);
 }
 
+div.container a img {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Query para permitir que un view port mas amplio se coloquen de forma horizontal los items den nav */
 
-@media (min-width: 650px) {
+@media (min-width: 490px) {
   nav ul li {
     display: inline-block;
+  }
+
+  div.container a img {
+    display: inherit;
+    max-width: 100%;
+    width: 20%;
   }
 }
 
@@ -240,7 +254,7 @@ En esta sección se dará formato a index.htnl
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Cabecera de sección */
+/* Cabecera de sección de articulo */
 
 section.hero {
   background: url(../img/bg-hero-mars.jpg);
@@ -257,20 +271,24 @@ section.hero div {
   padding-left: 0.8rem;
 }
 
+section.hero div h1 {
+  font-size: calc(1.7rem + 1.6vw);
+}
+
 section.hero div p {
   font-style: italic;
+  font-size: calc(0.9rem + 1.5vw);
 }
+
+/* Media query para pantallas superiores a 650px */
 
 @media (min-width: 650px) {
   section.hero div {
     margin-left: 10rem;
   }
+
   section.hero div h1 {
     font-size: 4rem;
-  }
-
-  section.hero div p {
-    font-size: 2rem;
   }
 
   section.hero {
@@ -278,4 +296,20 @@ section.hero div p {
     background-position: right;
     height: 25rem;
   }
+}
+
+/* Reglas para encabezado de sección foto misiones */
+
+section.container h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+section.container p {
+  font-size: 1.4rem;
+}
+
+ul.grid img {
+  max-width: 100%;
+  display: block;
 }
