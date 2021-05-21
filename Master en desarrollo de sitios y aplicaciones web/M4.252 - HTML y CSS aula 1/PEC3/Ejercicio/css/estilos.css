@@ -145,15 +145,15 @@ div.container a img {
 
 /* Query para permitir que un view port mas amplio se coloquen de forma horizontal los items den nav */
 
-@media (min-width: 490px) {
+@media (min-width: 600px) {
   nav ul li {
     display: inline-block;
   }
 
   div.container a img {
     display: inherit;
-    max-width: 100%;
     width: 20%;
+    height: auto;
   }
 }
 
@@ -163,6 +163,7 @@ En esta sección se dará formato al footer del sitio web que es común para tod
 -------------------------------------------------------------------------------------------------------------------
 */
 
+/* Regla para dar estilo a la seccion de footer, color, espacio */
 footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -176,6 +177,15 @@ footer div.container {
   display: grid;
   justify-items: center;
   font-size: 0.8rem;
+}
+
+footer ul li a {
+  font-size: calc(0.6rem + 0.3vw);
+}
+
+footer ul li {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Reglas para dar formato a cada enlace en el footer  */
@@ -197,7 +207,7 @@ form {
 /* Reglas para estilo  de texto newsletter */
 
 form > p {
-  font-size: 1.7rem;
+  font-size: calc(0.7rem + 1.5vw);
 }
 
 form span {
@@ -221,6 +231,10 @@ input[type="email"] {
   border-bottom: 0.1rem solid var(--text-bg-color);
 }
 
+footer label {
+  font-size: calc(0.7rem + 0.3vw);
+}
+
 button {
   border: none;
   padding: 0.5rem 0.8rem;
@@ -239,13 +253,28 @@ button:hover {
   font-size: 1.1rem;
 }
 
-.bottomFooter > p {
-  margin-top: 1.8rem;
+div.bottomFooter p {
+  margin-bottom: 0.5rem;
   font-size: 0.8rem;
+}
+
+div.bottomFooter ul + p {
+  margin-top: 1.8rem;
 }
 
 .bottomFooter {
   margin-bottom: 2rem;
+}
+
+footer div.container img {
+  width: 60%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  footer div.container img {
+    width: 25%;
+  }
 }
 
 /*
@@ -259,7 +288,7 @@ En esta sección se dará formato a index.htnl
 section.hero {
   background: url(../img/bg-hero-mars.jpg);
   background-repeat: no-repeat;
-  background-size: 60% auto;
+  background-size: 70% auto;
   background-position: right bottom;
   background-color: black;
   color: var(--text-bg-color);
@@ -280,9 +309,9 @@ section.hero div p {
   font-size: calc(0.9rem + 1.5vw);
 }
 
-/* Media query para pantallas superiores a 650px */
+/* Media query para pantallas superiores a px */
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
   section.hero div {
     margin-left: 10rem;
   }
