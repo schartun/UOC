@@ -27,6 +27,6 @@ if ( size <= 0 || isNaN(size)) {
   console.log(`El reverso del arreglo es [${reverse}]`);
 }
 
-// Existe un método que puede facilitar el cálculo de una manera muchas más sencilla .reverse() el cual se aplica directamente al array devolviendo el mismo invertido, no se implementó aquí ya que es materia de la siguiente unidad y PEC
+// Existe un método que puede facilitar el cálculo de una manera muchas más sencilla .reverse() el cual se aplica directamente al array devolviendo el mismo invertido
   
   
