@@ -91,23 +91,29 @@ En esta sección se establecerá un contenedor general para todas las páginas. 
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+} */
+
+@media (min-width: 950px) {
+  .container {
+    max-width: 800px;
+  }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-}
+} */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1000px;
   }
-}
+} */
 
 main {
   padding-top: 3rem;
@@ -159,7 +165,7 @@ nav li.active {
 }
 
 /* Reglas para modificar propiedades a pantallas mayores a 768px */
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   nav ul {
     flex-direction: row;
     font-size: 1.1rem;
@@ -329,7 +335,9 @@ div.bottomFooter p {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+/* Reglas para modificar propiedades a pantallas mayores a 768px */
+
+@media (min-width: 950px) {
   footer div.container img {
     width: 14rem;
   }
@@ -460,8 +468,69 @@ footer div.container img {
 En esta sección se dará formato a index.htnl
 -------------------------------------------------------------------------------------------------------------------
 */
-/* Cabecera de sección de articulo */
+
+
+/* Cabecera de sección de articulo, fondo e imagen */
+
 section.hero {
+  background: url(img/bg-hero-mars.jpg);
+  background-repeat: no-repeat;
+  background-size: 11rem auto;
+  background-position: right bottom;
+  background-color: black;
+  color: var(--text-bg-color);
+  height: 16rem;
+}
+
+/* Reglas para dar estilo a los texto dentro de hero */
+
+section.hero div {
+  padding-top: 2rem;
+  padding-left: 0.8rem;
+}
+
+section.hero h1 {
+  margin-top:1.5rem;
+  font-size: 1.8rem;
+}
+
+section.hero  p {
+  font-style: italic;
+  margin-top: 0.6rem;
+}
+
+/* Reglas para modificar propiedades a pantallas mayores a 768px */
+
+@media (min-width: 480px) {
+  section.hero {
+    background-size: 20rem auto;
+    background-position: 90%  bottom;
+    height: 20rem;
+  }
+
+@media (min-width: 950px) {
+  /* section.hero {
+    background-size: 20rem auto;
+    background-position: 90%  bottom;
+    height: 20rem;
+  } */
+
+  section.hero div {
+    padding-top: 0.2rem;
+  }
+
+  section.hero h1 {
+  font-size: 4rem;
+
+}
+
+  section.hero  p {
+    font-size: 1.9rem;
+
+}
+}
+/* Cabecera de sección de articulo */
+/* section.hero {
   background: url(../img/bg-hero-mars.jpg);
   background-repeat: no-repeat;
   background-size: 70% auto;
@@ -483,10 +552,10 @@ section.hero div h1 {
 section.hero div p {
   font-style: italic;
   font-size: calc(0.9rem + 1.5vw);
-}
+} */
 
 /* Media query para pantallas superiores a px */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   section.hero div {
     margin-left: 10rem;
   }
@@ -500,7 +569,7 @@ section.hero div p {
     background-position: right;
     height: 25rem;
   }
-}
+} */
 
 /* Reglas para encabezado de sección foto misiones */
 section.container h2 {
