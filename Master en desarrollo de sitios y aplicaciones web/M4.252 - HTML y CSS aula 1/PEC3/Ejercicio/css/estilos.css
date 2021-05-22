@@ -574,14 +574,56 @@ section.hero div p {
 /* Reglas para encabezado de sección foto misiones */
 section.container h2 {
   margin-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 section.container p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
-ul.grid img {
+ul.grid img  {
   max-width: 100%;
-  display: block;
+  display:block;
+}
+
+ul.grid h3 {
+  font-size: 1.5rem;
+}
+
+ul.grid p {
+  font-size: 1rem;
+  
+}
+
+
+
+ul.grid li h3 {
+  padding-left:0.8rem;
+}
+
+ul.grid li p {
+  padding-left:0.8rem;
+  padding-right: 0.9rem;
+}
+
+
+
+@media (min-width: 576px) {
+  ul.grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);;
+
+  }
+ul.grid h3 {
+  font-size: 1.3rem;
+}
+
+ul.grid p {
+  font-size: 0.8rem;
+}
+
+  ul.grid li:nth-child(odd) {
+  background-color: var(--bg-light-color);
+}
+
 }
