@@ -473,7 +473,7 @@ En esta sección se dará formato a index.htnl
 /* Cabecera de sección de articulo, fondo e imagen */
 
 section.hero {
-  background: url(img/bg-hero-mars.jpg);
+  background: url(../img/bg-hero-mars.jpg);
   background-repeat: no-repeat;
   background-size: 11rem auto;
   background-position: right bottom;
