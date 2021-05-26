@@ -397,6 +397,7 @@ ul.grid li img {
   ul.grid li p {
     padding-left: 0.8rem;
     padding-right: 0.9rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -591,5 +592,32 @@ div.science figcaption:before {
   div.science figure {
     background-color: var(--bg-light-color);
     margin-bottom: 0rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a la página marte en el cine
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+div.cine figcaption {
+  font-size: 1.2rem;
+  background-color: var(--bg-light-color);
+  margin-top: 0rem;
+  padding-top: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+div.cine figcaption cite {
+  font-weight: 700;
+}
+
+@media (min-width: 950px) {
+  div.cine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.2rem;
+    column-gap: 0.8rem;
   }
 }
