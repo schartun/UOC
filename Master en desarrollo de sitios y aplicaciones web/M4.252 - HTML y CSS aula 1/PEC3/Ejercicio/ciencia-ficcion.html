@@ -15,22 +15,21 @@
     </head>
 <body >
     <header>    
-        <div>
+        <div class="container">
             <a href="index.html"><img src="img/logo-black-es.png" alt="logotipo marte ciencia arte literatura"></a>
-              <nav>
-                <ul>
-                  <li><a href="index.html/#exploraciónDeMarte">Exploración de Marte</a></li>
-                  <li class="active"><a href="ciencia-ficcion.html">Ciencia ficción</a></li>
-                  <li><a href="marte-en-el-cine.html">Marte en el cine</a></li>
+            <nav>
+              <ul>
+                <li><a href="index.html#exploracionDeMarte">Exploración de Marte</a></li>
+                <li class="active"><a href="ciencia-ficcion.html">Ciencia ficción</a></li>
+                <li><a href="marte-en-el-cine.html">Marte en el cine</a></li>
               </ul>
-              </nav>
-            </div>
+            </nav>
+          </div>
     </header>
     <main>
-        <section>
+        <section class="container">
             <h1>Ciencia ficción</h1>
-
-            <div>
+            <div class="science">
                 <h2 lang="en">The Marteian Chronicles</h2>
                 <figure >
                     <blockquote lang="en">He wanted to go to Mars on the rocket. He went down to the rocketfield in theearly morning and yelled in through wire fence at the men in uniform that hewanted to go to Mars. He told them he was a taxpayer, his name wasPritchard, and he had a right to go to Mars …</blockquote>
@@ -39,7 +38,7 @@
                 <img src="img/ray-bradbury.jpg" alt="Ray Bradbury">
             </div>
 
-            <div>
+            <div class="science">
                 <h2 lang="en">The Mars Trilogy</h2>
                 <figure >
                     <blockquote lang="en">When we first arrived, and for twenty years after that, Mars was like Antarctica but even purer. We were outside the world, we didn't even own things -- some clothes, a lectern, and that was it! Now you know what I think, John. This arrangement resembles the prehistoric way to live …</blockquote>
@@ -48,7 +47,7 @@
                 <img src="img/kim-stanley-robinson.jpg" alt="Kim Stanley Robinson">
             </div>
 
-            <div>
+            <div class="science">
                 <h2 lang="en">The Sands of Mars</h2>
                 <figure >
                     <blockquote lang="en">The Grand Marteian Hotel now had no less than two residents, a state of affairs which imposed a severe strain on its temporary staff. The rest of his shipmates had made private arrangements for their accommodation in Port Lowell …</blockquote>
@@ -57,7 +56,7 @@
                 <img src="img/arthur-c-clarke.jpg" alt="Arthur C. Clarke">
             </div>
 
-            <div>
+            <div class="science">
                 <h2 lang="en">Marteian Time-Slip</h2>
                 <figure >
                     <blockquote lang="en">The archaeological teams which had landed on Mars early in the ’70s had eagerlyplotted the stages of retreat of the old civilization which human beings had nowbegun to replace. It had not at any time settled in the desert proper. Evidently, as withthe Tigris and Euphrates civilization on Earth, it had clung to what it could irrigate …</blockquote>
@@ -66,7 +65,7 @@
                 <img src="img/philip-k-dick.jpg" alt="Philip K. Dick">
             </div>
 
-            <div>
+            <div class="science">
                 <h2 lang="en">The War of the Worlds</h2>
                 <figure >
                     <blockquote lang="en">
@@ -76,7 +75,7 @@
                 <img src="img/h-g-wells.jpg" alt="H.G. Wells">
             </div>
 
-            <div>
+            <div class="science">
                 <h2 lang="en">A Princess of Mars</h2>
                 <figure >
                     <blockquote lang="en">
@@ -89,42 +88,42 @@
         </section>
     </main>
     <footer>
-        <img src="img/logo-white-es.png" alt="logotipo blanco marte ciencia arte literatura">
-        <a href="mailto:hola@utopiamarciana.net">hola@utopiamarciana.net</a>
-        <form action="" method="post">
-            
-            <p>Siempre al día con nuestra newsletter</p>
-
-            <div>
+        <div class="container">
+            <img src="img/logo-white-es.png" alt="logotipo blanco marte ciencia arte literatura">
+            <a href="mailto:hola@utopiamarciana.net">hola@utopiamarciana.net</a>
+            <form action="" method="post">
+      
+              <p>Siempre al día con nuestra <span>newsletter</span></p>
+      
+              <div>
                 <!-- La etiqueta creo que no es necesaria -->
                 <!-- <label for="email">Escribe tu e-mail</label> -->
                 <input type="email" id="email" name="email" placeholder="Escribe tu e-mail">
-            </div>
-            
-            <div>
+              </div>
+      
+              <div>
                 <p>
-                <label for="acuerdo">
+                  <label for="acuerdo">
                     <input type="checkbox" id="acuerdo" name="acuerdo" value="OK">
                     Acepto la <a href="">política de protección de datos</a>
-                </label>
+                  </label>
                 </p>
                 <p>
                   <button type="submit">Suscríbeme</button>
                 </p>
+              </div>
+      
+            </form>
+            <div class="bottomFooter">
+              <ul>
+                <li><a href="">Aviso Legal</a></li>
+                <li><a href="">Politica de privacidad</a></li>
+                <li><a href="">Politica de cookies</a></li>
+              </ul>
+              <p><time datetime="2021">2021</time> &#169; Utopía marciana</p>
+              <p>Actividad realizada por Ivan Schartun, para la asignatura HTML y CSS. Segundo semestre del curso <time datetime="2021">2020</time>-<time datetime="2021">2021</time></p>
             </div>
-        
-        </form>
-        <div>
-            <ul>
-              <li><a href="">Aviso Legal</a></li>
-              <li><a href="">Politica de privacidad</a></li>
-              <li><a href="">Politica de cookies</a></li>
-          </ul>
-        </div>
-        <div>
-            <p><time datetime="2021">2021</time> &#169; Utopía marciana</p>
-            <p>Actividad realizada por Ivan Schartun, para la asignatura HTML y CSS. Segundo semestre del curso <time datetime="2021">2020</time>-<time datetime="2021">2021</time></p>
-        </div>
+          </div>
     </footer>
 </body>
 </html>
