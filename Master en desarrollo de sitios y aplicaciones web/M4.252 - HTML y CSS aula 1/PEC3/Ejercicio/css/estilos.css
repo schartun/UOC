@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta sección se dará formato general a los elementos generales del sitio web, comunes para todas las paginas
+En esta sección se dará formato general a los elementos generales del sitio web, comunes para todas las páginas
 -------------------------------------------------------------------------------------------------------------------
 */
 
@@ -13,12 +13,14 @@ En esta sección se dará formato general a los elementos generales del sitio we
   --bg-light-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Regla que permite un reset general */
+/* Regla que permite un reset general  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Regla que permite definir valores iniciales de elementos base  */
 
 body {
   font-family: "Alegreya", serif;
@@ -78,7 +80,7 @@ En esta sección se establecerá un contenedor general para todas las páginas. 
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/*Regla que estable la dimensión general  del contendor general para todas las paginas */
+/*Regla que estable la dimensión general  del contendor general para todas las páginas */
 
 .container {
   margin-right: auto;
@@ -109,12 +111,12 @@ En esta sección se dará formato al header del sitio web que es común para tod
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Regla dar espacio de barra de navegacion y tope de cabecera*/
+/* Regla dar espacio de barra de navegación y tope de cabecera*/
 div.container {
   margin-top: 0.9rem;
 }
 
-/* Regla para horizontalizar los enlaces del menu */
+/* Regla para horizontalizar los enlaces del menú */
 
 nav {
   margin-top: 0.6rem;
@@ -150,7 +152,7 @@ nav li.active {
   border-bottom: 3px solid var(--text-color);
 }
 
-/* Reglas para modificar propiedades a pantallas mayores a 768px */
+/* Reglas para modificar propiedades a pantallas mayores a 950px */
 
 @media (min-width: 950px) {
   nav ul {
@@ -171,11 +173,11 @@ nav li.active {
 
 /*
 -------------------------------------------------------------------------------------------------------------------
-En esta sección se dará formato al footer del sitio web que es común para todas sus paginas
+En esta sección se dará formato al footer del sitio web que es común para todas sus páginas
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Regla para dar estilo general a la seccion de footer */
+/* Regla para dar estilo general a la sección de footer */
 
 footer {
   padding-top: 3rem;
@@ -186,7 +188,7 @@ footer {
   text-align: center;
 }
 
-/* Regla para adecuar el tamano del logo */
+/* Regla para adecuar el tamaño del logo */
 
 footer div.container img {
   display: block;
@@ -195,7 +197,7 @@ footer div.container img {
   height: auto;
 }
 
-/* Regla para adecuar correo electornico en footer */
+/* Regla para adecuar correo electrónico  en footer */
 
 footer div.container > a {
   display: block;
@@ -242,6 +244,10 @@ input[type="email"] {
   border-bottom: 0.1rem solid var(--text-bg-color);
 }
 
+input[type="email"]:focus {
+  color: var(--text-bg-color);
+}
+
 input[type="checkbox"] {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
@@ -263,7 +269,7 @@ button:hover {
   color: var(--text-bg-color);
 }
 
-/* Reglas para dar estilo al menu de navegación en footer */
+/* Reglas para dar estilo al menú de navegación en footer */
 
 footer ul li {
   display: inline-block;
@@ -285,7 +291,7 @@ div.bottomFooter p {
   margin-bottom: 2rem;
 }
 
-/* Reglas para modificar propiedades a pantallas mayores a 768px */
+/* Reglas para modificar propiedades a pantallas mayores a 950px */
 
 @media (min-width: 950px) {
   footer div.container img {
@@ -349,7 +355,7 @@ ul.grid li img {
   max-width: 100%;
 }
 
-/* Reglas para modificar propiedades a pantallas mayores a 768px */
+/* Reglas para modificar propiedades de hero section en pantallas mayores a 480px especifico para el background */
 
 @media (min-width: 480px) {
   section.hero {
@@ -358,6 +364,8 @@ ul.grid li img {
     height: 20rem;
   }
 }
+
+/* Reglas para encabezados de sección hero para pantallas mayores a 950px, y seccion de foto misiones*/
 
 @media (min-width: 950px) {
   section.hero div {
@@ -372,7 +380,6 @@ ul.grid li img {
     font-size: 1.9rem;
   }
 
-  /* Reglas para encabezados de sección foto misiones */
   section.container h2 {
     margin-top: 2rem;
     font-size: 1.7rem;
@@ -400,6 +407,8 @@ ul.grid li img {
     padding-bottom: 2rem;
   }
 }
+
+/* Reglas para modificar el layout de información de listado de misiones según pantalla viewport 576px */
 
 @media (min-width: 576px) {
   ul.grid {

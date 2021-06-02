@@ -1,75 +1,40 @@
-// 1- Crear un array que contenga las siguientes cadenas: "luna", "ganimedes", "europa", "calixto", "io", una vez creado se deberá imprimir por pantalla cada uno de los valores primero sin utilizar y después utilizando un bucle.
+// 1- Dado el siguiente array ["Pera", "Naranja", "Fresa", "Banana", "Mango", "Manzana"] ordenar alfabéticamente todos los elementos.
 
-// definición de arreglo
-const moons = ['luna', 'ganimedes', 'europa', 'calixto', 'io'];
+const array = ["Pera", "Naranja", "Fresa", "Banana", "Mango", "Manzana"];
 
-//impresión simple
-console.log(moons[0]);
-console.log(moons[1]);
-console.log(moons[2]);
-console.log(moons[3]);
-console.log(moons[4]);
+let arrayOrdered = array.sort();
 
-//impresión con loop
-for ( let i = 0; i < moons.length; i++) {
-  console.log(moons[i]);
-}
+console.log(arrayOrdered);
 
 
-// 2- Crear un array que contenga los siguientes dígitos: 20, 5, 9, 63, 28, 27 y una vez creado obtener la longitud del array y mostrarla por pantalla.
+// // 2- Dado el siguiente array ["pera", "Naranja", "fresa", "Banana", "Mango", "manzana"] ordenar alfabéticamente todos los elementos.
 
-const data = [20, 5, 9, 63, 28, 27];
-
-console.log(data.length);
-
-// 3- Dado el array = [1,2,3,4,5,6], desarrollar un script que realice lo siguiente:
-
-// - Iterar por todos los elementos dentro de un array utilizando while y mostrarlos en pantalla.
-
-const array = [1,2,3,4,5,6];
-let i = 0;
-while (  i < array.length ) {
-  console.log(array[i]);
-  i++
-}
-
-// - Iterar por todos los elementos dentro de un array utilizando for y mostrarlos en pantalla.
-
-const array = [1,2,3,4,5,6];
-for ( let i = 0; i < array.length; i++ ) {
-  console.log(array[i]);
-}
+var array = ["pera", "Naranja", "fresa", "Banana", "Mango", "manzana"];
 
 
-// - Generar una copia de un array pero con todos los elementos incrementado en 1.
+function compare(a, b) {
+  if ( a.toLowerCase() > b.toLowerCase() ) {
+    return 1;
+  }
+  if ( a.toLowerCase() < b.toLowerCase() ) {
+    return -1;
+  }
+  return 0;
+};
 
-const array = [1,2,3,4,5,6];
-let arrayCopy = []
-for ( let i = 0; i < array.length; i++ ) {
-  arrayCopy[i] =array[i] + 1;
-}
-console.log(arrayCopy);
+let orderedArray = array.sort(compare);
 
-
-// - Calcular la media de los valores del array original
-
-const array = [1,2,3,4,5,6];
-let sum = 0;
-for ( let i = 0; i < array.length; i++ ) {
-  sum = sum + array[i];
-}
-console.log(sum/array.length);
-
-// El ejercicio se debe completar sin modificar el array original
+console.log(orderedArray);
 
 
-// 4- Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "negro", "gris"]
-// determinar si un color introducido por el usuario a través de un prompt();
-// se encuentra dentro del array o no.
+// 3- Dado el siguiente array [5,515,1,61,111,616,51,4,36,8,11] ordenar los valores de menor a mayor.
 
-const array = ["azul", "amarillo", "rojo", "verde", "negro", "gris"];
-let color = prompt('Ingrese un color');
+const array = [5,515,1,61,111,616,51,4,36,8,11];
 
-let answer =  array.includes(color.toLowerCase ());
+console.log(array.sort(function( a, b){ return a - b }));
 
-(answer ? console.log('Si inluye el color') : console.log('No inluye el color') );
+// 4- Dado el siguiente array [5,515,1,61,111,616,51,4,36,8,11] ordenar los valores de mayor a menor.
+
+const array = [5,515,1,61,111,616,51,4,36,8,11];
+
+console.log(array2.sort(function( a, b){ return b - a }));
