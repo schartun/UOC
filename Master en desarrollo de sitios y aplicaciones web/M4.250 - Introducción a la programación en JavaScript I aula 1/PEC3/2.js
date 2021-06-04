@@ -29,6 +29,7 @@ if (
   let yesterday = new Date(msYesterday);
   
 // Impresion por consola de fecha actual
+// El parametro en-GB nos dentro de toLocaleDateString permite presentar el formato DD/MM/AAAA
 
   console.log("El día de ayer fue: " + yesterday.toLocaleDateString(('en-GB')));  
 } else {
