@@ -85,3 +85,23 @@ do {
 array.pop();
 
 console.log(`El tamano del arreglo es ${array.length}, y los valores son [${array}]`);
+
+
+// 9- Convertir el siguiente String en un Array y a continuación eliminar todos los "." que se encuentren: "Hoy. es. martes."
+
+const string1 = 'Hoy. es. martes.';
+
+let string2 = string1.replaceAll(" ", "");
+
+let array3 = string2.split('');
+
+for( var i = 0; i < array3.length; i++){ 
+    
+        if ( array3[i] === '.' ) { 
+    
+            array3.splice(i, 1); 
+        }
+    
+    }
+
+console.log(array3);
