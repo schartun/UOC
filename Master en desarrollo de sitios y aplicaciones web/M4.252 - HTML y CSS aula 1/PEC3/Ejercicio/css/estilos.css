@@ -436,13 +436,13 @@ En esta sección se dará formato a mars-2020.html
 
 /* Regla que permite dar formato a la lista interna del artículo */
 
-article section p + ul {
+div.mars2020 article p + ul {
   font-size: 1.1rem;
   list-style-type: square;
   margin-left: 2rem;
 }
 
-/* Reglas que permiten aplcicar unas respuesta responsiva al video incrustado */
+/* Reglas que permiten aplicar una respuesta responsiva al video incrustado */
 
 div.video-fluid {
   position: relative;
@@ -478,8 +478,7 @@ figure {
   margin-bottom: 1.1rem;
 }
 
-/* 
-Regla para dar formato a la leyenda de video */
+/* Regla para dar formato a la leyenda de video */
 
 figcaption {
   font-size: 0.6rem;
@@ -512,16 +511,16 @@ aside ul {
 /* Reglas Query para pantallas superiores a 950px */
 
 @media (min-width: 950px) {
-  article {
+  div.mars2020 {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  article section {
+  div.mars2020 article {
     grid-column: 2/3;
   }
 
-  article aside {
+  div.mars2020 aside {
     grid-column: 1 / 2;
     grid-row: 1/2;
     margin-top: 3rem;
@@ -534,19 +533,27 @@ En esta sección se dará formato a la página ciencia ficción
 -------------------------------------------------------------------------------------------------------------------
 */
 
+/* Regla para definir fuente de titulo principal */
+
 section h1 {
   font-size: 2.5rem;
 }
+
+/* Regla para permitir dimensionar las imagenes */
 
 div img {
   display: block;
   max-width: 100%;
 }
 
+/* Regla para definir tonalidad de fondo en cada casilla informativa */
+
 div.science {
   background-color: var(--bg-light-color);
   margin-bottom: 1.2rem;
 }
+
+/* Regla para posicionar imagen de autor */
 
 div.science h2,
 div.science figure {
@@ -555,14 +562,20 @@ div.science figure {
   padding-top: 0.8rem;
 }
 
+/* Regla para definir espaciamiento de titulo secundario */
+
 div.science h2 {
   line-height: 2rem;
 }
+
+/* Regla para dar estilo a bloque de cita */
 
 div.science blockquote {
   font-size: 1rem;
   font-style: italic;
 }
+
+/* Regla para dar estilo al figcaption  */
 
 div.science figcaption {
   font-size: 1.2rem;
@@ -571,6 +584,8 @@ div.science figcaption {
   padding-left: 1.5rem;
   text-align: inherit;
 }
+
+/* Regla para insertar un guion antes de texto en figcaption */
 
 div.science figcaption:before {
   content: "";
@@ -582,6 +597,8 @@ div.science figcaption:before {
   top: 60%;
   position: absolute;
 }
+
+/* Reglas para aplicar estilo en pantallas mayores a 950px */
 
 @media (min-width: 950px) {
   div.science {
@@ -610,6 +627,8 @@ En esta sección se dará formato a la página marte en el cine
 -------------------------------------------------------------------------------------------------------------------
 */
 
+/* Regla para dar estilo a figcaption de pagina marte en el cine   */
+
 div.cine figcaption {
   font-size: 1.2rem;
   background-color: var(--bg-light-color);
@@ -621,6 +640,8 @@ div.cine figcaption {
 div.cine figcaption cite {
   font-weight: 700;
 }
+
+/* Reglas para establer layout en pantallas superiores a 950px  */
 
 @media (min-width: 950px) {
   div.cine {
