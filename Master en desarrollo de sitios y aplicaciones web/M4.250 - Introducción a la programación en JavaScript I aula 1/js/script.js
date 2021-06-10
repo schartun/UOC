@@ -33,3 +33,17 @@ for ( let i = 0 ; i < array.length; i++) {
 
 // metodo presentación por consola
 console.log(newArray);
+
+// 3- Crear una código que, dado un array, devuelva el valor del último elemento de un array sin eliminar ese elemento del array.
+// let numeos = [11, 3, 1, 8, 5]; //devolverá el 5
+
+let numeros = [11, 3, 1, 8, 5]
+console.log(numeros[numeros.length - 1])
+
+// 4- Crear un código que dado un array y una posición, devuelva el array "cortado" desde la posición 0 hasta la recibida.
+// Si recibe un 0 devolverá un array con un solo valor, el primero.
+
+let position = 2;
+let array = [11, 3, 1, 8, 5];
+
+console.log(array.slice(0,position + 1 )); //incluye el valor de la ultima posición, si no remover +1
