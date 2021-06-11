@@ -46,4 +46,25 @@ console.log(numeros[numeros.length - 1])
 let position = 2;
 let array = [11, 3, 1, 8, 5];
 
-console.log(array.slice(0,position + 1 )); //incluye el valor de la ultima posición, si no remover +1
+console.log(array.slice(0,position + 1 )); 
+
+// 5- Crear un código que dado un array y una posición, devuelva el array "cortado" desde la posición recibida hasta el final.
+// Si recibe un valor mayor que el tamaño del array, devolverá -1. Si recibe el valor de la última posición del array devolverá un array con solo el último valor.
+// Ejemplo: [2,5,8,9,15] corto por el 2 => [8, 9,15] (corta desde la posición 2 e ignora el 2 y el 5)
+// Ejemplo: [2,5,8,9,15] corto por el 4 => [15]
+// Ejemplo: [2,5,8,9,15] corto por el 8 => -1
+
+
+let position = 2;
+let array = [2,5,8,9,15];
+
+(( position >= array.length) ? console.log(-1) : console.log(array.slice(position)))
+
+
+// 6- Ordenar por orden alfabético inverso el los elementos del siguiente array: ["Azul", "Verde", "Negro", "Rojo", "Amarillo", "Magenta"]
+
+let array = ["Azul", "Verde", "Negro", "Rojo", "Amarillo", "Magenta"];
+
+array.sort().reverse();
+
+console.log(array);
