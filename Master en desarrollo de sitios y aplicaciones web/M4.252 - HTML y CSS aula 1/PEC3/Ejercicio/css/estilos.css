@@ -116,7 +116,7 @@ div.container {
   margin-top: 0.9rem;
 }
 
-/* Regla para horizontalizar los enlaces del menú */
+/* Reglas para horizontalizar los enlaces del menú */
 
 nav {
   margin-top: 0.6rem;
@@ -533,13 +533,13 @@ En esta sección se dará formato a la página ciencia ficción
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Regla para definir fuente de titulo principal */
+/* Regla para definir fuente de título  principal */
 
 section h1 {
   font-size: 2.5rem;
 }
 
-/* Regla para permitir dimensionar las imagenes */
+/* Regla para permitir dimensionar las imágenes */
 
 div img {
   display: block;
@@ -562,7 +562,7 @@ div.science figure {
   padding-top: 0.8rem;
 }
 
-/* Regla para definir espaciamiento de titulo secundario */
+/* Regla para definir espaciamiento de título  secundario */
 
 div.science h2 {
   line-height: 2rem;
@@ -603,7 +603,6 @@ div.science figcaption:before {
 @media (min-width: 950px) {
   div.science {
     display: grid;
-    /* grid-template-columns: 1fr 2fr 1fr; */
     grid-template-columns: 20% auto auto;
     background-color: transparent;
     margin-top: 1.2rem;
@@ -627,7 +626,7 @@ En esta sección se dará formato a la página marte en el cine
 -------------------------------------------------------------------------------------------------------------------
 */
 
-/* Regla para dar estilo a figcaption de pagina marte en el cine   */
+/* Reglas para dar estilo a figcaption de página  marte en el cine   */
 
 div.cine figcaption {
   font-size: 1.2rem;
@@ -641,7 +640,7 @@ div.cine figcaption cite {
   font-weight: 700;
 }
 
-/* Reglas para establer layout en pantallas superiores a 950px  */
+/* Reglas para establecer layout en pantallas superiores a 950px  */
 
 @media (min-width: 950px) {
   div.cine {
