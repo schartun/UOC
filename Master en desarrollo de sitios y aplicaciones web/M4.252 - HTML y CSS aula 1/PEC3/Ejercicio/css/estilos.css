@@ -603,7 +603,7 @@ div.science figcaption:before {
 @media (min-width: 950px) {
   div.science {
     display: grid;
-    grid-template-columns: 20% auto auto;
+    grid-template-columns: 20% 2fr 1fr;
     background-color: transparent;
     margin-top: 1.2rem;
     column-gap: 0.8rem;
