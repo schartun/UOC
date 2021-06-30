@@ -1,0 +1,652 @@
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato general a los elementos generales del sitio web, comunes para todas las páginas
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla que permite establecer variables generales de colores */
+:root {
+  --text-color: rgb(0, 0, 0);
+  --text-bg-color: rgb(255, 255, 255);
+  --contrast-color: rgb(189, 55, 0);
+  --bg-dark-color: rgb(0, 0, 0);
+  --bg-light-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Regla que permite un reset general  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Regla que permite definir valores iniciales de elementos base  */
+
+body {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--contrast-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+cite {
+  font-style: normal;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se establecerá un contenedor general para todas las páginas. Al mismo tiempo se definirán los cambios que deben ejecutarse según dimensión del viewport
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/*Regla que estable la dimensión general  del contendor general para todas las páginas */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato al header del sitio web que es común para todas sus paginas
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla dar espacio de barra de navegación y tope de cabecera*/
+div.container {
+  margin-top: 0.9rem;
+}
+
+/* Reglas para horizontalizar los enlaces del menú */
+
+nav {
+  margin-top: 0.6rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+div.container img {
+  display: block;
+  margin: 0 auto;
+  width: 16rem;
+  height: auto;
+}
+
+/* Reglas para dar formato a cada enlace en el menú */
+
+nav a {
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+nav a:hover {
+  color: var(--contrast-color);
+}
+
+nav li.active {
+  border-bottom: 3px solid var(--text-color);
+}
+
+/* Reglas para modificar propiedades a pantallas mayores a 950px */
+
+@media (min-width: 950px) {
+  nav ul {
+    flex-direction: row;
+    font-size: 1.1rem;
+  }
+
+  div.container img {
+    display: initial;
+    width: 10rem;
+    height: auto;
+  }
+
+  nav ul li {
+    margin-right: 2rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato al footer del sitio web que es común para todas sus páginas
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla para dar estilo general a la sección de footer */
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--bg-dark-color);
+  color: var(--text-bg-color);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* Regla para adecuar el tamaño del logo */
+
+footer div.container img {
+  display: block;
+  margin: 0 auto;
+  width: 16rem;
+  height: auto;
+}
+
+/* Regla para adecuar correo electrónico  en footer */
+
+footer div.container > a {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+/* Reglas para dar formato a cada enlace en el footer  */
+
+footer a {
+  color: var(--text-bg-color);
+}
+
+footer a:hover {
+  color: var(--contrast-color);
+}
+
+/* Reglas para dar estilo a newsletter */
+
+footer span {
+  font-style: italic;
+}
+
+/* Reglas para dar estilo a los campos de la forma */
+
+footer form {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+::placeholder {
+  color: grey;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1.2rem;
+  border: none;
+  background-color: var(--bg-dark-color);
+  border-bottom: 0.1rem solid var(--text-bg-color);
+}
+
+input[type="email"]:focus {
+  color: var(--text-bg-color);
+}
+
+input[type="checkbox"] {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+footer label {
+  font-size: 0.8rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 0.8rem;
+  margin: 0.4rem 0.2rem;
+}
+
+button:hover {
+  background-color: var(--contrast-color);
+  color: var(--text-bg-color);
+}
+
+/* Reglas para dar estilo al menú de navegación en footer */
+
+footer ul li {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+div.bottomFooter ul + p {
+  margin-top: 1.8rem;
+}
+
+div.bottomFooter p {
+  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.bottomFooter {
+  margin-bottom: 2rem;
+}
+
+/* Reglas para modificar propiedades a pantallas mayores a 950px */
+
+@media (min-width: 950px) {
+  footer div.container img {
+    width: 14rem;
+  }
+
+  input[type="email"] {
+    width: 25rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+
+  form > p {
+    font-size: 1.5rem;
+  }
+
+  footer ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a index.htnl
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Cabecera de sección de articulo, fondo e imagen */
+
+section.hero {
+  background: url(../img/bg-hero-mars.jpg);
+  background-repeat: no-repeat;
+  background-size: 11rem auto;
+  background-position: right bottom;
+  background-color: black;
+  color: var(--text-bg-color);
+  height: 16rem;
+}
+
+/* Reglas para dar estilo a los texto dentro de hero */
+
+section.hero div {
+  padding-top: 2rem;
+  padding-left: 0.8rem;
+}
+
+section.hero h1 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+section.hero p {
+  font-style: italic;
+  margin-top: 0.6rem;
+}
+
+ul.grid li img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Reglas para modificar propiedades de hero section en pantallas mayores a 480px especifico para el background */
+
+@media (min-width: 480px) {
+  section.hero {
+    background-size: 20rem auto;
+    background-position: 90% bottom;
+    height: 20rem;
+  }
+}
+
+/* Reglas para encabezados de sección hero para pantallas mayores a 950px, y seccion de foto misiones*/
+
+@media (min-width: 950px) {
+  section.hero div {
+    padding-top: 0.2rem;
+  }
+
+  section.hero h1 {
+    font-size: 4rem;
+  }
+
+  section.hero p {
+    font-size: 1.9rem;
+  }
+
+  section.container h2 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+
+  section.container p {
+    font-size: 1.2rem;
+  }
+
+  ul.grid h3 {
+    font-size: 1.5rem;
+  }
+
+  ul.grid p {
+    font-size: 1rem;
+  }
+
+  ul.grid li h3 {
+    padding-left: 0.8rem;
+  }
+
+  ul.grid li p {
+    padding-left: 0.8rem;
+    padding-right: 0.9rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Reglas para modificar el layout de información de listado de misiones según pantalla viewport 576px */
+
+@media (min-width: 576px) {
+  ul.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  ul.grid h3 {
+    font-size: 1.3rem;
+  }
+
+  ul.grid p {
+    font-size: 0.8rem;
+  }
+
+  ul.grid li:nth-child(odd) {
+    background-color: var(--bg-light-color);
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a mars-2020.html
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla que permite dar formato a la lista interna del artículo */
+
+div.mars2020 article p + ul {
+  font-size: 1.1rem;
+  list-style-type: square;
+  margin-left: 2rem;
+}
+
+/* Reglas que permiten aplicar una respuesta responsiva al video incrustado */
+
+div.video-fluid {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+iframe.video-fluid-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-fluid::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+iframe {
+  border: 0;
+}
+
+figure {
+  margin-bottom: 1.1rem;
+}
+
+/* Regla para dar formato a la leyenda de video */
+
+figcaption {
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+/* Reglas para dar formato a menú de navegación secundario */
+
+aside {
+  font-family: "Open Sans", sans-serif;
+}
+
+aside h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+
+.activeAside {
+  font-weight: 800;
+}
+
+/* Reglas Query para pantallas superiores a 950px */
+
+@media (min-width: 950px) {
+  div.mars2020 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  div.mars2020 article {
+    grid-column: 2/3;
+  }
+
+  div.mars2020 aside {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    margin-top: 3rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a la página ciencia ficción
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Regla para definir fuente de título  principal */
+
+section h1 {
+  font-size: 2.5rem;
+}
+
+/* Regla para permitir dimensionar las imágenes */
+
+div img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Regla para definir tonalidad de fondo en cada casilla informativa */
+
+div.science {
+  background-color: var(--bg-light-color);
+  margin-bottom: 1.2rem;
+}
+
+/* Regla para posicionar imagen de autor */
+
+div.science h2,
+div.science figure {
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+/* Regla para definir espaciamiento de título  secundario */
+
+div.science h2 {
+  line-height: 2rem;
+}
+
+/* Regla para dar estilo a bloque de cita */
+
+div.science blockquote {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Regla para dar estilo al figcaption  */
+
+div.science figcaption {
+  font-size: 1.2rem;
+  font-weight: 800;
+  position: relative;
+  padding-left: 1.5rem;
+  text-align: inherit;
+}
+
+/* Regla para insertar un guion antes de texto en figcaption */
+
+div.science figcaption:before {
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 0.2rem;
+  background: var(--contrast-color);
+  left: 0.1rem;
+  top: 60%;
+  position: absolute;
+}
+
+/* Reglas para aplicar estilo en pantallas mayores a 950px */
+
+@media (min-width: 950px) {
+  div.science {
+    display: grid;
+    grid-template-columns: 20% 2fr 1fr;
+    background-color: transparent;
+    margin-top: 1.2rem;
+    column-gap: 0.8rem;
+  }
+
+  div.science h2 {
+    background-color: var(--bg-light-color);
+    margin-top: 0rem; /*Sobre escribe regla de index.html */
+  }
+
+  div.science figure {
+    background-color: var(--bg-light-color);
+    margin-bottom: 0rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------
+En esta sección se dará formato a la página marte en el cine
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+/* Reglas para dar estilo a figcaption de página  marte en el cine   */
+
+div.cine figcaption {
+  font-size: 1.2rem;
+  background-color: var(--bg-light-color);
+  margin-top: 0rem;
+  padding-top: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+div.cine figcaption cite {
+  font-weight: 700;
+}
+
+/* Reglas para establecer layout en pantallas superiores a 950px  */
+
+@media (min-width: 950px) {
+  div.cine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.2rem;
+    column-gap: 0.8rem;
+  }
+}
